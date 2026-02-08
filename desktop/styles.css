@@ -49,7 +49,8 @@ section {
   align-items: center;
 }
 
-section:not(#contact) {
+section:not(#contact),
+.section {
   background-image: url("./res/table.jpg");
   background-size: cover;
 }
