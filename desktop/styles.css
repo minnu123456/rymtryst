@@ -60,7 +60,8 @@ section > * {
 
 section p {
   font-family: "Open Sans", sans-serif;
-  color: #333333;
+  color: black;
+  text-align: center;
 }
 
 section h2:not(#contact h2),
