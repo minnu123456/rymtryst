@@ -1,0 +1,188 @@
+header {
+  position: fixed;
+  top: 0;
+  height: 10vh;
+  background: transparent;
+  color: var(--p3);
+  anchor-name: --header;
+  z-index: 999;
+  width: 100vw;
+  border-bottom: 1px solid var(--p3);
+}
+
+header #back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--p2);
+  filter: saturate(70%);
+  z-index: -99;
+}
+header > ul {
+  width: auto;
+  background-color: transparent;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+#dropdown .ul-highlight {
+  color: whitesmoke;
+  background-color: var(--p4);
+  font-weight: 700;
+}
+
+#dropdown * {
+  font-family: "Open Sans", sans-serif;
+}
+
+.ul-delight {
+  background-color: transparent;
+}
+
+#dropdown > li {
+  color: black;
+  margin: 16px 0px;
+  padding: 0px 8px;
+  display: flex;
+}
+
+.m {
+  width: max-content;
+  border-bottom: 1px solid var(--p3);
+}
+
+header .arroww {
+  display: inline-block;
+  width: 10px;
+  height: 8px;
+  margin-left: 8px;
+  background-color: currentColor; /* Matches text color */
+
+  clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+
+  transition: transform 0.3s ease;
+}
+
+.sub_dropdown_ul {
+  position: absolute;
+  display: none;
+  height: auto;
+  width: 100vw;
+  top: calc(100% + 1px);
+  left: 0;
+  overflow: hidden;
+  font-weight: 400;
+  background: var(--p2);
+
+  filter: saturate(70%);
+  animation: subDrop 0.5s ease-in;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+ul .sub_dropdown_li {
+  position: relative;
+  color: rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid var(--p3);
+  margin: 8px 0;
+}
+
+.sub_dropdown_li a {
+  position: relative;
+  color: var(--p3);
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+#h-left {
+  height: auto;
+  width: auto;
+  padding: 12px 0px;
+}
+
+#h-down {
+  height: auto;
+  padding: 5px;
+  width: 100%;
+  background-color: var(--p3);
+  color: white;
+}
+
+#h-down * {
+  font-family: "Open Sans", sans-serif;
+}
+
+#h-down > * {
+  border: 0px;
+  height: 20px;
+  padding: 0 5px;
+  border-radius: 40px;
+  text-align: center;
+}
+
+#h-down .searcho {
+  border-radius: 20px;
+}
+
+#h-down svg {
+  height: auto;
+  width: auto;
+}
+
+#h-left img {
+  height: 60px;
+  width: 60px;
+}
+
+#h-left h1 {
+  display: block;
+  height: auto;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  transform: scaleY(1.3);
+  text-align: center;
+  font-display: block;
+  min-width: 0;
+  flex-shrink: 0;
+  width: auto;
+  margin: 0 10px;
+}
+
+#h-left h2 {
+  font-size: 8px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#splashscreen {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: var(--p2);
+  filter: saturate(70%);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#splashscreen > img {
+  height: 35vw;
+  width: 35vw;
+  margin: 0 auto;
+  transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+#splashscreen.finished {
+  display: none;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Welfare & Community Development</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background: #f4f8fb;
+        color: #333;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 5vw;
+      }
+
+      .section-title {
+        text-align: center;
+        font-size: clamp(30px, 4vw, 42px);
+        color: #1a4f72;
+        margin-bottom: 40px;
+        font-weight: bold;
+      }
+
+      /* Intro box */
+      .intro-box {
+        background: white;
+        padding: clamp(25px, 4vw, 45px);
+        border-radius: 14px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        line-height: 1.8;
+        font-size: clamp(16px, 2vw, 18px);
+        margin-bottom: 60px;
+      }
+
+      /* Grid */
+      .community-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 30px;
+      }
+
+      /* Card */
+      .community-card {
+        background: white;
+        border-radius: 14px;
+        overflow: hidden;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+      }
+
+      .community-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+      }
+
+      /* Image */
+      .community-card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+
+      .community-card:hover img {
+        transform: scale(1.08);
+      }
+
+      /* Content */
+      .community-content {
+        padding: 25px;
+      }
+
+      .community-content h3 {
+        margin-top: 0;
+        color: #1a4f72;
+        font-size: clamp(20px, 2.5vw, 24px);
+      }
+
+      .community-content p {
+        font-size: clamp(15px, 2vw, 16px);
+        line-height: 1.6;
+      }
+
+      /* Mobile */
+      @media (max-width: 600px) {
+        .community-card img {
+          height: 200px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="section-title">Social Welfare & Community Development</div>
+
+      <div class="intro-box">
+        Our trust is committed to uplifting vulnerable communities by providing
+        support in education, health, and social services. We believe in
+        empowering individuals through direct assistance, awareness, and
+        skill-building programs to create a stronger, inclusive society.
+      </div>
+
+      <div class="community-grid">
+        <div class="community-card">
+          <img src="../res/8.jpeg" alt="Hostels & Meal Programs" />
+          <div class="community-content">
+            <h3>Free Hostels & Meal Programs</h3>
+            <p>
+              Providing safe accommodation and nutritious meals for students
+              from underprivileged backgrounds, ensuring their education is
+              uninterrupted.
+            </p>
+          </div>
+        </div>
+
+        <div class="community-card">
+          <img src="../res/11.jpeg" alt="Support for Orphanages" />
+          <div class="community-content">
+            <h3>Support for Orphanages & Elderly Homes</h3>
+            <p>
+              Regular assistance, donation drives, and volunteer programs to
+              improve the quality of life for orphans and the elderly in our
+              communities.
+            </p>
+          </div>
+        </div>
+
+        <div class="community-card">
+          <img src="../res/10.jpeg" alt="Legal Aid" />
+          <div class="community-content">
+            <h3>Legal Aid & Financial Literacy</h3>
+            <p>
+              Free legal guidance, awareness workshops, and financial literacy
+              programs to empower communities to understand their rights and
+              manage resources wisely.
+            </p>
+          </div>
+        </div>
+
+        <div class="community-card">
+          <img src="../res/9.jpeg" alt="Community Development" />
+          <div class="community-content">
+            <h3>Community Development Programs</h3>
+            <p>
+              Initiatives for skill development, vocational training, and
+              awareness campaigns aimed at sustainable growth and self-reliance
+              in rural and urban communities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

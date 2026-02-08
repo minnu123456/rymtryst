@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sustainable Development & Environmental Initiatives</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background: #f4f8fb;
+        color: #333;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 5vw;
+      }
+
+      .section-title {
+        text-align: center;
+        font-size: clamp(30px, 4vw, 42px);
+        color: #1a4f72;
+        margin-bottom: 40px;
+        font-weight: bold;
+      }
+
+      /* Intro box */
+      .intro-box {
+        background: white;
+        padding: clamp(25px, 4vw, 45px);
+        border-radius: 14px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        line-height: 1.8;
+        font-size: clamp(16px, 2vw, 18px);
+        margin-bottom: 60px;
+      }
+
+      /* Grid */
+      .environment-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 30px;
+      }
+
+      /* Card */
+      .environment-card {
+        background: white;
+        border-radius: 14px;
+        overflow: hidden;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+      }
+
+      .environment-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+      }
+
+      /* Image */
+      .environment-card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+
+      .environment-card:hover img {
+        transform: scale(1.08);
+      }
+
+      /* Content */
+      .environment-content {
+        padding: 25px;
+      }
+
+      .environment-content h3 {
+        margin-top: 0;
+        color: #1a4f72;
+        font-size: clamp(20px, 2.5vw, 24px);
+      }
+
+      .environment-content p {
+        font-size: clamp(15px, 2vw, 16px);
+        line-height: 1.6;
+      }
+
+      /* Mobile */
+      @media (max-width: 600px) {
+        .environment-card img {
+          height: 200px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="section-title">
+        Sustainable Development & Environmental Initiatives
+      </div>
+
+      <div class="intro-box">
+        Our trust is committed to protecting the environment and promoting
+        sustainable development practices. We aim to empower communities to
+        adopt eco-friendly practices that preserve natural resources for future
+        generations.
+      </div>
+
+      <div class="environment-grid">
+        <div class="environment-card">
+          <img src="../res/4.jpeg" alt="Organic Farming" />
+          <div class="environment-content">
+            <h3>Organic & Vertical Farming</h3>
+            <p>
+              Promoting organic farming techniques and vertical farming in rural
+              communities to increase crop yield, reduce chemical use, and
+              ensure sustainable agriculture.
+            </p>
+          </div>
+        </div>
+
+        <div class="environment-card">
+          <img src="../res/5.jpeg" alt="Solar Energy" />
+          <div class="environment-content">
+            <h3>Solar Energy Adoption</h3>
+            <p>
+              Supporting the installation of solar panels in rural areas to
+              provide clean, renewable energy, reduce electricity costs, and
+              minimize carbon footprint.
+            </p>
+          </div>
+        </div>
+
+        <div class="environment-card">
+          <img src="../res/6.jpeg" alt="Water Conservation" />
+          <div class="environment-content">
+            <h3>Water Conservation & Waste Management</h3>
+            <p>
+              Implementing rainwater harvesting, community ponds, recycling
+              programs, and awareness campaigns to ensure efficient water use
+              and waste reduction.
+            </p>
+          </div>
+        </div>
+
+        <div class="environment-card">
+          <img src="../res/7.jpeg" alt="Eco-Awareness" />
+          <div class="environment-content">
+            <h3>Environmental Awareness Programs</h3>
+            <p>
+              Educating communities on sustainable living, climate change, tree
+              plantation drives, and eco-conscious lifestyles to nurture a
+              greener future.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

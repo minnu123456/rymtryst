@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aims & Objectives</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background: #f4f8fb;
+        color: #333;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 5vw;
+      }
+
+      .section-title {
+        text-align: center;
+        font-size: clamp(30px, 4vw, 42px);
+        color: #1a4f72;
+        margin-bottom: 40px;
+        font-weight: bold;
+      }
+
+      /* Intro */
+      .intro-box {
+        background: white;
+        padding: clamp(25px, 4vw, 45px);
+        border-radius: 14px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        line-height: 1.8;
+        font-size: clamp(16px, 2vw, 18px);
+      }
+
+      /* Grid */
+      .objective-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 30px;
+        margin-top: 60px;
+      }
+
+      /* Card */
+      .objective-card {
+        background: white;
+        border-radius: 14px;
+        overflow: hidden;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+        transition: 0.3s;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .objective-card:hover {
+        transform: translateY(-6px);
+      }
+
+      /* Images */
+      .objective-card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+      }
+
+      /* Content */
+      .objective-content {
+        padding: 25px;
+      }
+
+      .objective-content h3 {
+        margin-top: 0;
+        color: #1a4f72;
+        font-size: clamp(20px, 2.5vw, 24px);
+      }
+
+      .objective-content p {
+        font-size: clamp(15px, 2vw, 16px);
+        line-height: 1.6;
+      }
+
+      /* Mobile */
+      @media (max-width: 600px) {
+        .objective-card img {
+          height: 200px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="section-title">Aims & Objectives</div>
+
+      <div class="intro-box">
+        The
+        <strong
+          >RATSA YEDUKONDALU MEMORIAL EDUCATIONAL AND CHARITABLE TRUST</strong
+        >
+        is founded on the values of service, inclusivity, and empowerment. Our
+        primary aim is to create equitable opportunities for all — especially
+        the underprivileged — through charitable, educational, environmental,
+        cultural, and humanitarian initiatives. <br /><br />
+        Our objectives are designed to create a lasting, human-centered impact
+        on society.
+      </div>
+
+      <div class="objective-grid">
+        <div class="objective-card">
+          <img src="../res/14.jpeg" alt="" />
+          <div class="objective-content">
+            <h3>📘 Education</h3>
+            <p>
+              Scholarships, tuition centres, digital learning, and
+              infrastructure development to make quality education accessible to
+              all.
+            </p>
+          </div>
+        </div>
+
+        <div class="objective-card">
+          <img src="../res/13.jpeg" alt="" />
+          <div class="objective-content">
+            <h3>🏥 Healthcare</h3>
+            <p>
+              Free medical camps, mobile health clinics, and mental health
+              support to ensure timely and affordable care.
+            </p>
+          </div>
+        </div>
+
+        <div class="objective-card">
+          <img src="../res/12.jpeg" alt="" />
+          <div class="objective-content">
+            <h3>🤝 Social Welfare</h3>
+            <p>
+              Support for orphanages, elderly care, and disaster relief programs
+              to uplift vulnerable communities.
+            </p>
+          </div>
+        </div>
+
+        <div class="objective-card">
+          <img src="../res/15.jpeg" alt="" />
+          <div class="objective-content">
+            <h3>👩‍💼 Women Empowerment</h3>
+            <p>
+              Vocational training, financial support, and self-help groups to
+              promote confidence and independence.
+            </p>
+          </div>
+        </div>
+
+        <div class="objective-card">
+          <img src="../res/16.jpeg" alt="" />
+          <div class="objective-content">
+            <h3>🌱 Sustainability</h3>
+            <p>
+              Organic farming, renewable energy, and eco-friendly housing to
+              protect the planet for future generations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

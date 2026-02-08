@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Governance, Transparency & Accountability</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background: #f4f8fb;
+        color: #333;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 5vw;
+      }
+
+      .section-title {
+        text-align: center;
+        font-size: clamp(30px, 4vw, 42px);
+        color: #1a4f72;
+        margin-bottom: 40px;
+        font-weight: bold;
+      }
+
+      /* Intro box */
+      .intro-box {
+        background: white;
+        padding: clamp(25px, 4vw, 45px);
+        border-radius: 14px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        line-height: 1.8;
+        font-size: clamp(16px, 2vw, 18px);
+        margin-bottom: 60px;
+      }
+
+      /* Grid */
+      .governance-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 30px;
+      }
+
+      /* Card */
+      .governance-card {
+        background: white;
+        border-radius: 14px;
+        overflow: hidden;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+      }
+
+      .governance-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+      }
+
+      /* Image */
+      .governance-card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+
+      .governance-card:hover img {
+        transform: scale(1.08);
+      }
+
+      /* Content */
+      .governance-content {
+        padding: 25px;
+      }
+
+      .governance-content h3 {
+        margin-top: 0;
+        color: #1a4f72;
+        font-size: clamp(20px, 2.5vw, 24px);
+      }
+
+      .governance-content p {
+        font-size: clamp(15px, 2vw, 16px);
+        line-height: 1.6;
+      }
+
+      /* Mobile */
+      @media (max-width: 600px) {
+        .governance-card img {
+          height: 200px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="section-title">Governance, Transparency & Accountability</div>
+
+      <div class="intro-box">
+        Our trust follows the highest standards of governance and
+        accountability. Transparent operations, independent oversight, and
+        public engagement ensure integrity and trust in all our initiatives.
+      </div>
+
+      <div class="governance-grid">
+        <div class="governance-card">
+          <img
+            src="https://images.unsplash.com/photo-1581091012184-9b3f8a62e7a3"
+            alt="Financial Audits"
+          />
+          <div class="governance-content">
+            <h3>Regular Financial Audits</h3>
+            <p>
+              Comprehensive audits and transparency reports are conducted
+              regularly to ensure that all funds are utilized efficiently and
+              responsibly.
+            </p>
+          </div>
+        </div>
+
+        <div class="governance-card">
+          <img
+            src="https://images.unsplash.com/photo-1573164574396-14ba1d9c27f8"
+            alt="Independent Governance Board"
+          />
+          <div class="governance-content">
+            <h3>Independent Governance Board</h3>
+            <p>
+              An independent board oversees all operations, ensuring ethical
+              decision-making, accountability, and alignment with the trust’s
+              objectives.
+            </p>
+          </div>
+        </div>
+
+        <div class="governance-card">
+          <img
+            src="https://images.unsplash.com/photo-1564866657315-4c0e4b9a2c9d"
+            alt="Public Engagement"
+          />
+          <div class="governance-content">
+            <h3>Public Engagement</h3>
+            <p>
+              Annual reports, community events, and transparent communication
+              foster public trust and allow stakeholders to stay informed about
+              all initiatives.
+            </p>
+          </div>
+        </div>
+
+        <div class="governance-card">
+          <img
+            src="https://images.unsplash.com/photo-1564866657315-6f3e4b7b5c9f"
+            alt="Ethical Practices"
+          />
+          <div class="governance-content">
+            <h3>Ethical Practices & Compliance</h3>
+            <p>
+              We maintain strict ethical standards and compliance with legal
+              regulations, ensuring accountability, fairness, and integrity
+              across all operations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

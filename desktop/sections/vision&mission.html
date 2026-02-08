@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Vision & Mission</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background: #f4f8fb;
+        color: #333;
+      }
+
+      /* Main container */
+      .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 5vw;
+      }
+
+      /* Section Titles */
+      .section-title {
+        text-align: center;
+        font-size: clamp(28px, 4vw, 40px);
+        color: #1a4f72;
+        margin-bottom: 40px;
+        font-weight: bold;
+      }
+
+      /* Vision Box */
+      .vision-box {
+        background: white;
+        padding: clamp(25px, 4vw, 50px);
+        border-radius: 12px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+        line-height: 1.8;
+        font-size: clamp(16px, 2vw, 18px);
+      }
+
+      /* Mission Grid */
+      .mission-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: clamp(20px, 4vw, 30px);
+        margin-top: 40px;
+      }
+
+      /* Mission Card */
+      .mission-card {
+        background: white;
+        border-radius: 14px;
+        overflow: hidden;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
+        transition: 0.3s ease;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .mission-card:hover {
+        transform: translateY(-6px);
+      }
+
+      /* Mission Images */
+      .mission-card img {
+        width: 100%;
+        height: clamp(180px, 30vw, 240px);
+        object-fit: cover;
+      }
+
+      /* Mission Content */
+      .mission-content {
+        padding: clamp(18px, 3vw, 28px);
+        flex: 1;
+      }
+
+      .mission-content h3 {
+        margin-top: 0;
+        color: #1a4f72;
+        font-size: clamp(18px, 3vw, 22px);
+      }
+
+      .mission-content p {
+        font-size: clamp(15px, 2vw, 16px);
+        line-height: 1.6;
+      }
+
+      /* Core mission points */
+      .core-points {
+        margin-top: 60px;
+        background: white;
+        padding: clamp(25px, 4vw, 40px);
+        border-radius: 12px;
+      }
+
+      .core-points ul {
+        padding-left: 20px;
+      }
+
+      .core-points li {
+        font-size: clamp(15px, 2vw, 17px);
+        margin-bottom: 12px;
+      }
+
+      /* Mobile fine-tuning */
+      @media (max-width: 600px) {
+        .mission-card img {
+          height: 200px;
+        }
+
+        .core-points ul {
+          padding-left: 15px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Vision Section -->
+      <div class="section-title">Our Vision</div>
+      <div class="vision-box">
+        To build a self-sustaining, educated, and compassionate society where no
+        one is left behind — where access to quality education, healthcare, and
+        opportunities is not a privilege but a right.
+        <br /><br />
+        A world where villages thrive, women lead, youth innovate, and the earth
+        is nurtured with care.
+      </div>
+
+      <!-- Mission Section -->
+      <div class="section-title" style="margin-top: 70px">Our Mission</div>
+
+      <div class="mission-grid">
+        <div class="mission-card">
+          <img src="../res/1.png" alt="Education" />
+          <div class="mission-content">
+            <h3>📘 Education for All</h3>
+            <p>
+              To provide inclusive, value-based, and future-ready education to
+              economically disadvantaged students—ensuring that talent is never
+              lost to poverty.
+            </p>
+          </div>
+        </div>
+
+        <div class="mission-card">
+          <img src="../res/21.jpeg" alt="Healthcare" />
+          <div class="mission-content">
+            <h3>🏥 Accessible Healthcare</h3>
+            <p>
+              To extend timely, affordable, and preventive healthcare services,
+              focusing on rural and vulnerable populations, especially women,
+              children, and the elderly.
+            </p>
+          </div>
+        </div>
+
+        <div class="mission-card">
+          <img src="../res/20.jpeg" alt="Women Empowerment" />
+          <div class="mission-content">
+            <h3>👩🏭 Empowering Women & Youth</h3>
+            <p>
+              To promote self-respect and financial independence through
+              hands-on skill development, entrepreneurship programs, and
+              mentorship initiatives.
+            </p>
+          </div>
+        </div>
+
+        <div class="mission-card">
+          <img src="../res/19.jpeg" alt="Sustainability" />
+          <div class="mission-content">
+            <h3>🌱 Sustainable Development</h3>
+            <p>
+              To champion eco-conscious living through renewable energy, organic
+              agriculture, clean water access, and green housing—respecting both
+              people and the planet.
+            </p>
+          </div>
+        </div>
+
+        <div class="mission-card">
+          <img src="../res/18.jpeg" alt="Transparency" />
+          <div class="mission-content">
+            <h3>🔍 Transparency & Accountability</h3>
+            <p>
+              To uphold the highest standards of ethics, honesty, and community
+              participation in all initiatives, ensuring every act of service is
+              done with clarity and conscience.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Core Mission Points -->
+      <div class="core-points">
+        <ul>
+          <li>
+            Provide quality education to economically disadvantaged students
+          </li>
+          <li>Ensure accessible healthcare services for all</li>
+          <li>Support women and youth through skill development programs</li>
+          <li>Promote sustainable living and environmental responsibility</li>
+          <li>Maintain transparency and accountability in all operations</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
