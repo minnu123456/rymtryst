@@ -30,9 +30,9 @@ html {
 
 section {
   position: relative;
-  width: 100vw;
+  width: 60vw;
   height: auto;
-  padding: 16px 20vw;
+  margin: 16px 20vw;
   display: flex;
   flex-direction: row;
   justify-content: center;
