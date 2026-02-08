@@ -18,8 +18,8 @@ html {
 
 #slide {
   position: relative;
-  height: 30vw;
-  width: 60vw;
+  height: auto;
+  width: 100vw;
   margin-top: 10vh;
   margin-left: 20vw;
   margin-right: 20vw;
