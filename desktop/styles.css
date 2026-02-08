@@ -171,6 +171,10 @@ footer {
   height: 100%;
 }
 
+#contact > div * {
+  margin: 3px 0;
+}
+
 #contact h2 {
   color: white;
   height: auto;
@@ -178,7 +182,12 @@ footer {
   font-weight: 900;
   width: auto;
   margin-right: auto;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+}
+
+#contact span {
+  height: auto;
+  font-size: 18px;
 }
 
 footer {
