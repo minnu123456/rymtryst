@@ -24,6 +24,14 @@ html {
   overflow: hidden;
 }
 
+#htmlbg {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  filter: blur(3px);
+  background-color: #0b1c3d;
+}
+
 #slide * {
   pointer-events: none;
 }
