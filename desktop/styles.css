@@ -49,9 +49,6 @@ section {
   align-items: center;
 }
 
-.section {
-}
-
 section:not(#contact),
 .section {
   background-image: url("./res/table.jpg");
