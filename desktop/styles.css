@@ -147,6 +147,9 @@ footer {
   align-items: center;
 }
 
+#donateInBook {
+}
+
 .dline {
   display: flex;
   flex-direction: row;
