@@ -20,7 +20,8 @@ header #back {
   filter: saturate(70%);
   z-index: -99;
 }
-header > ul {
+header > ul,
+#dropdown {
   width: auto;
   background-color: transparent;
   height: auto;
