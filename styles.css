@@ -313,9 +313,11 @@ img {
 #coastalAreas {
   height: auto;
   width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 #coastalAreas img {
-  width: 80vw;
+  width: 40vw;
   height: auto;
 }
