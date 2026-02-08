@@ -48,7 +48,8 @@ section {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background: var(--p5);
+  background-image: url("./res/table.jpg");
+  background-size: cover;
 }
 
 section > * {
