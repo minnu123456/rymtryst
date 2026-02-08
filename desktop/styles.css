@@ -36,8 +36,7 @@ html {
   pointer-events: none;
 }
 
-section,
-.section {
+section {
   position: relative;
   width: 60vw;
   height: auto;
@@ -48,6 +47,9 @@ section,
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.section {
 }
 
 section:not(#contact),
