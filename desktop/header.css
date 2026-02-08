@@ -79,9 +79,6 @@ header .arroww {
 
   filter: saturate(70%);
   animation: subDrop 0.5s ease-in;
-}
-
-#dd-container {
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
