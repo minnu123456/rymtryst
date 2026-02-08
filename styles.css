@@ -309,3 +309,13 @@ img {
 .bgnone {
   background-color: transparent;
 }
+
+#coastalAreas {
+  height: auto;
+  width: 100vw;
+}
+
+#coastalAreas img {
+  width: 80vw;
+  height: auto;
+}
