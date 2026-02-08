@@ -274,9 +274,12 @@ footer {
 }
 
 #back img {
+  margin: 0 auto;
+}
+
+#founder {
   height: 100px;
   width: 100px;
-  margin: 0 auto;
 }
 
 #back p {
