@@ -175,50 +175,6 @@ window.addEventListener("load", (e) => {
     },
   );
 
-  //section highliter
-  const page = document.getElementById("bgpage");
-  const latestActivity = document.getElementById("latestActivities");
-  const bluroos = document.querySelectorAll(".bluro");
-  let animIn = latestActivity;
-  latestActivity.classList.add("bgnone");
-  page.style.height = latestActivity.offsetHeight + "px";
-  page.style.top =
-    latestActivity.getBoundingClientRect().top + window.scrollY + "px";
-
-  const focusAnim = document.querySelectorAll(".focusAnim");
-  const observo = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          if (window.animIn) {
-            window.animIn.classList.remove("bgnone");
-          }
-          entry.target.classList.add("bgnone");
-          window.animIn = entry.target;
-          const rect = entry.target.getBoundingClientRect();
-          page.style.height = entry.target.offsetHeight + "px";
-          page.style.top = rect.top + window.scrollY + "px";
-          const bluroo = entry.target.querySelector(".bluro");
-          bluroos.forEach((e) => {
-            if (e == bluroo) {
-              e.active = true;
-            } else {
-              e.active = false;
-            }
-          });
-        }
-      });
-    },
-    {
-      root: null,
-      rootMargin: "-45% 0px -45% 0px",
-      threshold: 0.1,
-    },
-  );
-  for (let i = 0; i < focusAnim.length; i++) {
-    observo.observe(focusAnim[i]);
-  }
-  observer.observe(target);
   triggerSplash();
 });
 
