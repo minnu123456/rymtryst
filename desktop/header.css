@@ -28,11 +28,6 @@ header > ul {
   flex-direction: row;
 }
 
-#dd-container {
-  width: 50vw;
-  height: auto;
-}
-
 #dropdown .ul-highlight {
   color: whitesmoke;
   background-color: var(--p4);
