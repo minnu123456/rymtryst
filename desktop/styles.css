@@ -162,6 +162,7 @@ footer {
 }
 
 #contact {
+  position: relative;
   background-color: var(--p3);
   color: white;
 }
@@ -172,7 +173,8 @@ footer {
 
 #contact h2 {
   color: white;
-  font-size: 24px;
+  height: auto;
+  font-size: 44px;
   font-weight: 900;
   width: auto;
   margin-right: auto;
