@@ -166,6 +166,10 @@ footer {
   color: white;
 }
 
+#contact > div {
+  height: 100%;
+}
+
 #contact h2 {
   color: white;
   font-size: 24px;
