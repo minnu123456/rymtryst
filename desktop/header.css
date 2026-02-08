@@ -68,6 +68,8 @@ header .arroww {
 
 .sub_dropdown_ul {
   position: absolute;
+  padding-left: 40vw;
+  padding-right: 10vw;
   display: none;
   height: auto;
   width: 100vw;
@@ -81,21 +83,6 @@ header .arroww {
   animation: subDrop 0.5s ease-in;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-}
-
-.dd-container {
-  position: absolute;
-  display: none;
-  height: auto;
-  width: 100vw;
-  top: calc(100% + 1px);
-  left: 0;
-  overflow: hidden;
-  font-weight: 400;
-  background: var(--p2);
-
-  filter: saturate(70%);
-  animation: subDrop 0.5s ease-in;
 }
 
 ul .sub_dropdown_li {
