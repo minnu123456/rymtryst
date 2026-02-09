@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+
+    <meta name="description" content="A modern web page" />
+    <meta name="author" content="Your Name" />
+    <link rel="preload" as="image" href="./res/logo.png">
+    <script type="text/javascript">
+        (function() {
+            var mobileBreakpoint = 768; 
+            if (window.innerWidth > mobileBreakpoint) {
+                window.location.href = "https://rymeduandcharitabletrust.org.in/desktop.html";
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="blocks.css">
+    <link rel="stylesheet" href="simple.css">
+
+
+    <link rel="icon" href="./res/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body style="overflow:hidden; height: 100%;">
+    <div id="splashscreen">
+      <img src="./res/logo.png" alt="logo image" />
+    </div>
+    <img id="bgpage" src="./res/paper.jpg"></img>
+    <div id="imgfocus"><div id="if-container"></div><svg onclick="document.getElementById('imgfocus').style.display = 'none';" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></div>
+    <header class="flex flex-col justify-between items-center">
+        <div id="h-left" class="flex flex-row justify-between items-center">
+        <img id="h-logo" src="./res/logo.png" alt="logo image" loading="eager"/>
+        
+          <h1>
+            Ratsa Yedukondalu Memorial <br>
+            Educational and Charitable Trust
+          </h1>
+        
+        </div>
+        <div id="h-down"  class="flex flex-row justify-around items-center">
+        <button class="flex flex-row " >
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+          <p>search</p>
+        </button>   
+        <button class="searcho">Donate</button>
+        <button
+          id="dropbutt"
+          class="flex flex-row items-center"
+        >
+         <p  class="searcho">   Menu</p>
+        </button>
+        </div>
+      <ul id="dropdown">
+        <li>
+          <div class="m">About Us<span class="arroww"></span></div>
+          <ul class="sub_dropdown_ul">
+            <li class="sub_dropdown_li" ><a href="./sections/vision&mission.html">Vision & Mission</a></li>
+            <li class="sub_dropdown_li"><a href="./sections/aims&objective.html">Aims & Objectives</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="m">Our Works<span class="arroww"></span></div>
+          <ul class="sub_dropdown_ul">
+            <li class="sub_dropdown_li"><a href="./sections/healthServices.html">Medical & Health Services</a></li>
+            <li class="sub_dropdown_li"><a href="./sections/educationalInitiatives.html">Educational initiatives</a></li>
+            <li class="sub_dropdown_li">
+              <a href="./sections/socialWelfare.html">Social welfare & Community development</a>
+            </li>
+            <li class="sub_dropdown_li">
+              <a href="./sections/sustainableDevelopment.html">Sustainable development & Environmental initiatives</a>
+            </li>
+            <li class="sub_dropdown_li">
+              <a href="./sections/womenEmpowerment&skillDevelopment.html">Women Empowerment & Skill development</a>
+            </li>
+            <li class="sub_dropdown_li">Sports & Yoga</li>
+            <li class="sub_dropdown_li">idk disaster releif</li>
+            <li class="sub_dropdown_li"><a href="./sections/Digital_&_Technological_Empowerment.html">Digital & Technological Empowerment</a></li>
+            <li class="sub_dropdown_li">idk Institutions</li>
+            <li class="sub_dropdown_li">
+              <a href="./sections/Governance.html">Governance, Transparency & accountability</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="m">Insights<span class="arroww"></span></div>
+          <ul class="sub_dropdown_ul">
+            <li class="sub_dropdown_li">News Letters</li>
+            <li class="sub_dropdown_li">Opinions</li>
+            <li class="sub_dropdown_li">Survey & Reports</li>
+            <li class="sub_dropdown_li">Videos</li>
+          </ul>
+        </li>
+        <li><div class="m">Impack Stories<span class="arroww"></span></li></div>
+        <li>
+          <div class="m">Media<span class="arroww"></span></div>
+          <ul class="sub_dropdown_ul">
+            <li class="sub_dropdown_li">Media Reports</li>
+            <li class="sub_dropdown_li">Press Releases</li>
+            <li class="sub_dropdown_li">Events</li>
+          </ul>
+        </li>
+        <li>
+          <div class="m">Contact Us<span class="arroww"></span></div>
+          <ul class="sub_dropdown_ul">
+            <li class="sub_dropdown_li">Careers</li>
+            <li class="sub_dropdown_li">Contact Us</li>
+          </ul>
+        </li>
+      </ul>
+      <div id="back"></div>
+    </header>
+    <div id="slide" class="overflow-hidden">
+      <div id="track" class="flex flex-row">
+        <img src="./res/slide1.png" alt="" />
+        <img src="./res/2.png" alt="" />
+        <img src="./res/22.png" alt="" />
+      </div>
+    </div>
+
+    <section id="latestActivities" class="focusAnim">
+      <h2>Latest Activities</h2>
+      <div class="bluro">
+        <img src="./res/m1.jpeg" alt="">
+        <img src="./res/m2.jpeg"" alt="">
+        <img src="./res/m3.jpeg"" alt="">
+        <img src="./res/m4.jpeg"" alt="">
+        <img src="./res/m5.jpeg"" alt="">
+        <img src="./res/m6.jpeg"" alt="">
+        <img src="./res/m7.jpeg"" alt="">
+        <img src="./res/news.jpeg" alt="">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bVy0jMPffYQ?si=YbqCvneqDEsTCgR5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="flex flex-row justify-between exe" >
+        <div class="leftt arroww"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="white"><path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/></svg></div>
+        <a href="./sections/healthServices.html">Know More</a>
+        <div class="rightt arroww"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="white"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg></div>
+      </div>
+      <p>We are pleased to announce our 2026 impact goals, which prioritize sustainable community growth and streamlined digital transparency to meet the latest global charitable reporting standards.</p>
+    </section>
+    <section id="examTraining" class="focusAnim">
+      <h2>Competitive Exam training</h2>
+      <div class="bluro">
+        <img src="./res/m11.jpeg" alt="">
+        <img src="./res/m12.jpeg" alt="">
+        <img src="./res/m13.jpeg" alt="">
+        <img src="./res/m14.jpeg" alt="">
+        <img src="./res/m15.jpeg" alt="">
+        <img src="./res/m16.jpeg" alt="">
+      </div>
+      <div class="flex flex-row justify-between exe" >
+        <div class="leftt arroww"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="white"><path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/></svg></div>
+        <a href="./sections/educationalInitiatives.html">Know More</a>
+        <div class="rightt arroww"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="white"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg></div>
+      </div>
+      <p>
+        Our 2026 training initiative leverages blended learning and expert mentorship to equip deserving candidates with the digital tools and academic rigor needed to excel in national-level competitive exams.
+      </p>
+    </section>
+    <section id="vedicSchool" class="focusAnim">
+      <h2>Vedic School</h2>
+      <div class="bluro">
+        <img src="./res/m21.jpeg" alt="">
+        <img src="./res/m22.jpeg" alt="">
+        <img src="./res/24.jpeg" alt="">
+      </div>
+      <div class="flex flex-row justify-between exe" >
+        <div class="leftt arroww"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="white"><path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/></svg></div>
+        <a href="./sections/educationalInitiatives.html">Know More</a>
+        <div class="rightt arroww"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="white"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg></div>
+      </div>
+      <p>UNDER CONSTRUCTION</p>
+    </section>
+    <section id="coastalAreas">
+      <h2>Mangrove Forest Areas</h2>
+      <div>
+      <img src="./res/coastalAreas/1.jpeg" alt="">
+      <img src="./res/coastalAreas/2.jpeg" alt="">
+      <img src="./res/coastalAreas/3.jpeg" alt="">
+      <img src="./res/coastalAreas/4.jpeg" alt="">
+      <img src="./res/coastalAreas/5.jpeg" alt="">
+      <img src="./res/coastalAreas/6.jpeg" alt="">
+      </div>
+    </section>
+    <div class="section">
+      <h2>Our Works</h2>
+      <div class="grid">
+        <a href="./sections/healthServices.html" class="card health">
+          <img
+            src="./res/blocks/1.jpeg" loading="eager" decoding="sync" fetchpriority="high"
+          />
+          <div class="overlay"></div>
+          <div class="content flex">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="white"
+            >
+              <path
+                d="M420-340h120v-100h100v-120H540v-100H420v100H320v120h100v100Zm60 260q-139-35-229.5-159.5T160-516v-244l320-120 320 120v244q0 152-90.5 276.5T480-80Zm0-84q104-33 172-132t68-220v-189l-240-90-240 90v189q0 121 68 220t172 132Zm0-316Z"
+              />
+            </svg>
+            <div>
+              <h3>Health</h3>
+              <p>Medical & Wellness</p>
+            </div>
+          </div>
+          <div class="arrow">›</div>
+        </a>
+
+        <a href="./sections/educationalInitiatives.html" class="card education">
+          <img
+            src="./res/blocks/2.jpeg" loading="eager" decoding="sync" fetchpriority="high"
+          />
+          <div class="overlay"></div>
+          <div class="content">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="white"
+            >
+              <path
+                d="M240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h480q33 0 56.5 23.5T800-800v640q0 33-23.5 56.5T720-80H240Zm0-80h480v-640h-80v280l-100-60-100 60v-280H240v640Zm0 0v-640 640Zm200-360 100-60 100 60-100-60-100 60Z"
+              />
+            </svg>
+            <div>
+              <h3>Education</h3>
+              <p>Learning & Training</p>
+            </div>
+          </div>
+          <div class="arrow">›</div>
+        </a>
+
+        <a href="./sections/socialWelfare.html" class="card community">
+          <img
+            src="./res/blocks/3.jpeg" loading="eager" decoding="sync" fetchpriority="high"
+          />
+          <div class="overlay"></div>
+          <div class="content">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="white"
+            >
+              <path
+                d="M38-428q-18-36-28-73T0-576q0-112 76-188t188-76q63 0 120 26.5t96 73.5q39-47 96-73.5T696-840q112 0 188 76t76 188q0 38-10 75t-28 73q-11-19-26-34t-35-24q9-23 14-45t5-45q0-78-53-131t-131-53q-81 0-124.5 44.5T480-616q-48-56-91.5-100T264-760q-78 0-131 53T80-576q0 23 5 45t14 45q-20 9-35 24t-26 34ZM0-80v-63q0-44 44.5-70.5T160-240q13 0 25 .5t23 2.5q-14 20-21 43t-7 49v65H0Zm240 0v-65q0-65 66.5-105T480-290q108 0 174 40t66 105v65H240Zm540 0v-65q0-26-6.5-49T754-237q11-2 22.5-2.5t23.5-.5q72 0 116 26.5t44 70.5v63H780ZM480-210q-57 0-102 15t-53 35h311q-9-20-53.5-35T480-210Zm-320-70q-33 0-56.5-23.5T80-360q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T160-280Zm640 0q-33 0-56.5-23.5T720-360q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T800-280Zm-320-40q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-440q0 50-34.5 85T480-320Zm0-160q-17 0-28.5 11.5T440-440q0 17 11.5 28.5T480-400q17 0 28.5-11.5T520-440q0-17-11.5-28.5T480-480Zm0 40Zm1 280Z"
+              />
+            </svg>
+            <div>
+              <h3>Community</h3>
+              <p>Social Welfare</p>
+            </div>
+          </div>
+          <div class="arrow">›</div>
+        </a>
+
+        <a href="./sections/sustainableDevelopment.html" class="card sustain">
+          <img
+            src="./res/blocks/4.jpeg" loading="eager" decoding="sync" fetchpriority="high"
+          />
+          <div class="overlay"></div>
+          <div class="content">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="white"
+            >
+              <path
+                d="M216-176q-45-45-70.5-104T120-402q0-63 24-124.5T222-642q35-35 86.5-60t122-39.5Q501-756 591.5-759t202.5 7q8 106 5 195t-16.5 160.5q-13.5 71.5-38 125T684-182q-53 53-112.5 77.5T450-80q-65 0-127-25.5T216-176Zm112-16q29 17 59.5 24.5T450-160q46 0 91-18.5t86-59.5q18-18 36.5-50.5t32-85Q709-426 716-500.5t2-177.5q-49-2-110.5-1.5T485-670q-61 9-116 29t-90 55q-45 45-62 89t-17 85q0 59 22.5 103.5T262-246q42-80 111-153.5T534-520q-72 63-125.5 142.5T328-192Zm0 0Zm0 0Z"
+              />
+            </svg>
+            <div>
+              <h3>Sustainability</h3>
+              <p>Environment</p>
+            </div>
+          </div>
+          <div class="arrow">›</div>
+        </a>
+
+        <a href="./sections/womenEmpowerment&skillDevelopment.html" class="card women">
+          <img
+            src="./res/blocks/5.jpeg" loading="eager" decoding="sync" fetchpriority="high"
+          />
+          <div class="overlay"></div>
+          <div class="content">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="white"
+            >
+              <path
+                d="M400-80v-240H280l122-308q10-24 31-38t47-14q26 0 47 14t31 38l122 308H560v240H400Zm80-640q-33 0-56.5-23.5T400-800q0-33 23.5-56.5T480-880q33 0 56.5 23.5T560-800q0 33-23.5 56.5T480-720Z"
+              />
+            </svg>
+            <div>
+              <h3>Women Power</h3>
+              <p>Skills & Leadership</p>
+            </div>
+          </div>
+          <div class="arrow">›</div>
+        </a>
+
+        <a href="" class="card sports">
+          <img
+            src="./res/blocks/6.jpeg" loading="eager" decoding="sync" fetchpriority="high"
+          />
+          <div class="overlay"></div>
+          <div class="content">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="white"
+            >
+              <path
+                d="M272-160q-30 0-51-21t-21-51q0-21 12-39.5t32-26.5l156-62v-90q-54 63-125.5 96.5T120-320v-80q68 0 123.5-28T344-508l54-64q12-14 28-21t34-7h40q18 0 34 7t28 21l54 64q45 52 100.5 80T840-400v80q-83 0-154.5-33.5T560-450v90l156 62q20 8 32 26.5t12 39.5q0 30-21 51t-51 21H400v-20q0-26 17-43t43-17h120q9 0 14.5-5.5T600-260q0-9-5.5-14.5T580-280H460q-42 0-71 29t-29 71v20h-88Zm208-480q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z"
+              />
+            </svg>
+            <div>
+              <h3>Sports & Yoga</h3>
+              <p>Mind & Body</p>
+            </div>
+          </div>
+          <div class="arrow">›</div>
+        </a>
+
+        <a href="" class="card relief">
+          <img
+            src="./res/blocks/7.jpeg" loading="eager" decoding="sync" fetchpriority="high"
+          />
+          <div class="overlay"></div>
+          <div class="content">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="white"
+            >
+              <path
+                d="M80-80v-80q38 0 56.5-20t77.5-20q59 0 77 20t56 20q38 0 56-20t77-20q57 0 77.5 20t56.5 20q38 0 56-20t77-20q59 0 77 20t56 20v80q-58 0-77-20t-56-20q-37 0-56 20t-77 20q-58 0-77.5-20T480-120q-38 0-56 20t-77 20q-59 0-77-20t-56-20q-37 0-56 20T80-80Zm267-180q-57 0-77-20t-56-20q-35 0-56 20t-78 20v-80q38 0 56-20t77-20q6 0 12 .5t11 1.5l-38-140-55 72-63-50 311-384 461 176-29 75-84-34 81 301q14 8 27.5 15t32.5 7v80q-57-1-77-20.5T747-300q-38 0-56 20t-77 20q-57 0-77.5-20T480-300q-38 0-56 20t-77 20Zm0-80q30 0 46.5-14t50.5-22l-37-136 155-41 56 212q31-2 49-18.5t65-19.5l-86-321-229-84-157 188 69 254q4 1 8.5 1.5t9.5.5Zm149-222Z"
+              />
+            </svg>
+            <div>
+              <h3>Relief</h3>
+              <p>Disaster Support</p>
+            </div>
+          </div>
+          <div class="arrow">›</div>
+        </a>
+
+        <a href="./sections/Digital_&_Technological_Empowerment.html" class="card digital">
+          <img
+            src="./res/blocks/8.jpeg" loading="eager" decoding="sync" fetchpriority="high"
+          />
+          <div class="overlay"></div>
+          <div class="content">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="white"
+            >
+              <path
+                d="M320-120v-80h80v-80H160q-33 0-56.5-23.5T80-360v-400q0-33 23.5-56.5T160-840h640q33 0 56.5 23.5T880-760v400q0 33-23.5 56.5T800-280H560v80h80v80H320ZM160-360h640v-400H160v400Zm0 0v-400 400Z"
+              />
+            </svg>
+            <div>
+              <h3>Digital</h3>
+              <p>Tech Empowerment</p>
+            </div>
+          </div>
+          <div class="arrow">›</div>
+        </a>
+
+        <a href="/institutions" class="card institutions">
+          <img
+            src="./res/blocks/9.jpeg" loading="eager" decoding="sync" fetchpriority="high"
+          />
+          <div class="overlay"></div>
+          <div class="content">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="white"
+            >
+              <path
+                d="M480-120 200-272v-240L40-600l440-240 440 240v320h-80v-276l-80 44v240L480-120Zm0-332 274-148-274-148-274 148 274 148Zm0 241 200-108v-151L480-360 280-470v151l200 108Zm0-241Zm0 90Zm0 0Z"
+              />
+            </svg>
+            <div>
+              <h3>Institutions</h3>
+              <p>Trusts & Bodies</p>
+            </div>
+          </div>
+          <div class="arrow">›</div>
+        </a>
+
+        <a href="./sections/Governance.html" class="card governance">
+          <img
+            src="./res/blocks/10.jpeg" loading="eager" decoding="sync" fetchpriority="high"
+          />
+          <div class="overlay"></div>
+          <div class="content">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="white"
+            >
+              <path
+                d="M200-280v-280h80v280h-80Zm240 0v-280h80v280h-80ZM80-120v-80h800v80H80Zm600-160v-280h80v280h-80ZM80-640v-80l400-200 400 200v80H80Zm178-80h444-444Zm0 0h444L480-830 258-720Z"
+              />
+            </svg>
+            <div>
+              <h3>Governance</h3>
+              <p>Transparency</p>
+            </div>
+          </div>
+          <div class="arrow">›</div>
+        </a>
+      </div>
+    </div>
+    <section id="book">
+      <div id="main">
+        <div id="front" class="page"><img src="./res/bg1.png" alt="" id="front" /></div>
+        <div id="back" class="page">
+          <div>
+          <h2>Founder's Message</h2>
+          <img id="founder" src="./res/founder.jpeg" alt="">
+          <p>This Trust is founded on the enduring values of compassion, equity, and service to humanity. Our mission is to support the underprivileged, empower talented individuals, and create equal opportunities for growth through education, healthcare, and social development.</p>
+          </div>
+          <img id="bgo" src="./res/paper.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact us</h2>
+      <span>D.NO: 8-72/1,Ratsavari Peta, Keshavapuram, Tallarevu, Kakinada District, Andhra Pradesh PIN: 533463</span>
+      <div class="dline">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+        <pre>  +91 8332923309</pre>
+      </div>
+      <div class="dline">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+        <pre>  +91 9441490513</pre>
+      </div>
+      <div class="dline">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+        <pre>  admin@rymeduandcharitabletrust.org.in</pre>
+      </div>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3819.9751000905108!2d82.22271077515127!3d16.777914384008973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTbCsDQ2JzQwLjUiTiA4MsKwMTMnMzEuMCJF!5e0!3m2!1sen!2sin!4v1770560309155!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <footer class="flex justify-center">
+    © Ratsa Yedukondala Educatonal and Charitable Trust. Designed and Developed By Vihar
+    </footer>
+    <script src="./header.js"></script>
+  </body>
+</html>

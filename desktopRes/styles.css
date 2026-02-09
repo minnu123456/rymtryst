@@ -5,11 +5,15 @@
   font-family: Arial, sans-serif;
 }
 
+body {
+  opacity: 0;
+}
+
 :root {
   --p2: #ffd84d;
   --p3: #0b1c3d;
   --p4: #0b1c3db2;
-  --p5: #ffd84d75;
+  --p5: #f4f8fbc2;
 }
 
 html {
@@ -17,11 +21,20 @@ html {
 }
 
 #slide {
-  padding: 0;
   position: relative;
-  margin: 0;
   height: auto;
   width: 100vw;
+  margin-top: 10vh;
+  overflow: hidden;
+}
+
+#htmlbg {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  filter: blur(10px);
+  background-color: #0b1c3d;
+  z-index: -10000;
 }
 
 #slide * {
@@ -30,44 +43,69 @@ html {
 
 section {
   position: relative;
-  width: 100vw;
-  padding: 16px 32px;
+  width: 60vw;
+  height: auto;
+  margin: 16px 20vw;
+  padding: 32px;
+  border-radius: 10px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  background: #f4f8fb;
-  background: transparent;
+}
+
+section:not(#contact),
+.section {
+  background-image: url("../res/table.jpg");
+  background-size: cover;
 }
 
 section > * {
   margin: 8px 0;
 }
 
-section p {
-  font-family: "Open Sans", sans-serif;
-  color: #333333;
+#contact {
+  padding: 32px 7vw;
+  margin-bottom: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
-section > h2:not(#contact h2),
-.section > h2 {
+section p {
+  font-family: "Open Sans", sans-serif;
+  color: black;
+  text-align: center;
+}
+
+section h2:not(#contact h2),
+.section h2 {
   border-bottom: 2px solid var(--p3);
   font-family: "Montserrat", sans-serif;
-  font-size: 24px;
+  font-size: 40px;
   font-weight: 600;
   color: var(--p3);
   padding: 0px 8px;
   padding-left: 0px;
   width: auto;
-  margin-right: auto;
+  text-align: center;
   animation: h2Border linear both;
-  animation-timeline: view();
-  animation-range: entry 30% cover 40%;
+}
+
+.sleft {
+  width: 50%;
+}
+
+.sright {
+  width: 50%;
+}
+
+#track {
+  width: 100vw;
 }
 
 #track img {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 45vw;
 }
 
 footer {
@@ -75,7 +113,6 @@ footer {
   width: 100vw;
   background-color: var(--p3);
   color: rgba(255, 255, 255, 0.747);
-  border-top: 0.1px solid var(--p2);
   text-align: center;
   padding: 4px;
   font-size: 15px;
@@ -84,13 +121,13 @@ footer {
 
 .bluro {
   position: relative;
-  height: 45vw;
+  height: 15vw;
   width: 100%;
   overflow: hidden;
 }
 
-.bluro > * {
-  height: 100%;
+.bluro > img {
+  height: auto;
   width: 100%;
   position: absolute;
   visibility: hidden;
@@ -129,6 +166,47 @@ footer {
   align-items: center;
 }
 
+#donateInBook {
+  width: 35%;
+  height: 100%;
+  border: 2px solid #5b3a29;
+  padding: 16px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+#donateInBook #d-heading {
+  color: #5b3a29;
+  font-weight: 900;
+}
+
+#donateInBook > img {
+  position: relative;
+  width: 80%;
+  height: auto;
+  transform: scaleX(1.2);
+  transform: scaleY(0.8);
+  margin: 0 auto;
+}
+
+#donateInBook button {
+  width: 100%;
+  background-color: #5b3a29;
+  border: transparent;
+  font-weight: 900;
+  margin-top: 16px;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+}
+
+#main #back h2 {
+  font-size: 23px;
+  line-height: 25px;
+  border: transparent;
+}
+
 .dline {
   display: flex;
   flex-direction: row;
@@ -139,22 +217,37 @@ footer {
 }
 
 .map {
-  width: 100%;
-  height: 30vh;
+  width: 50%;
+  height: 15vw;
 }
 
 #contact {
+  position: relative;
   background-color: var(--p3);
   color: white;
 }
 
+#contact > div {
+  height: 100%;
+}
+
+#contact > div * {
+  margin: 3px 0;
+}
+
 #contact h2 {
   color: white;
-  font-size: 24px;
+  height: auto;
+  font-size: 44px;
   font-weight: 900;
   width: auto;
   margin-right: auto;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+}
+
+#contact span {
+  height: auto;
+  font-size: 18px;
 }
 
 @keyframes dropDown {
@@ -193,18 +286,18 @@ footer {
 
 @keyframes h2Border {
   0% {
-    transform: translateY(36px);
+    transform: translateX(36px);
   }
 
   100% {
-    transform: translateY(0px);
+    transform: translateX(0px);
   }
 }
 
 #main {
   position: relative;
-  width: 70vw;
-  height: 90vw;
+  width: 15vw;
+  height: 20vw;
   margin: auto;
   perspective: 2000px;
   border-radius: 20px;
@@ -218,6 +311,9 @@ footer {
 #book {
   background-image: url("./res/table.jpg");
   background-size: cover;
+  display: flex;
+  flex-direction: row;
+  padding: 32px 5vw;
 }
 
 .page {
@@ -282,15 +378,10 @@ footer {
 }
 
 #back p {
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 14px;
+  line-height: 18px;
   text-align: center;
   height: auto;
-}
-
-img {
-  content-visibility: auto;
-  contain-intrinsic-size: 1000px;
 }
 
 @keyframes book {
@@ -308,56 +399,9 @@ img {
   height: 0;
   top: 0;
   transition: top 0.5s ease-in-out;
+  display: none;
 }
 
 .bgnone {
   background-color: transparent;
-}
-
-#coastalAreas {
-  height: auto;
-  width: 100vw;
-}
-
-#coastalAreas > div {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 5px;
-}
-
-#coastalAreas img {
-  width: 45vw;
-  height: auto;
-}
-
-#imgfocus {
-  height: 100vh;
-  width: 100vw;
-  background-color: #0b1c3d8c;
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 10000;
-  display: flex;
-  align-items: center;
-  display: none;
-}
-
-#imgfocus > svg {
-  position: absolute;
-  height: 10vw;
-  width: 10vw;
-  top: 5%;
-  right: 5%;
-}
-
-#if-container {
-  width: 100vw;
-  min-height: 10vh;
-  height: auto;
-}
-
-#if-container > img {
-  width: 100%;
-  height: auto;
 }

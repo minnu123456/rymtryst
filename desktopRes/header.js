@@ -36,13 +36,14 @@ drop.addEventListener("click", (e) => {
       });
       target.classList.add("ul-highlight");
       const sub_drop = target.querySelector(".sub_dropdown_ul");
-      sub_drop.style.display = "block";
+      sub_drop.style.display = "grid";
     }
   }
 });
 
 // slide element position management (cause: header positioning is absolute)
 
+/*
 window.onload = () => {
   const header = document.querySelector("header").offsetHeight;
   document.getElementById("slide").style.margin = 0;
@@ -52,7 +53,7 @@ document.addEventListener("resize", () => {
   document.getElementById("slide").style.margin = 0;
   document.getElementById("slide").style.marginTop = header + "px";
 });
-
+*/
 // the animation logic for slide element
 const slide = document.getElementById("slide");
 let trackhold = false;
@@ -158,6 +159,7 @@ blurIns.forEach((e) => {
 });
 
 window.addEventListener("load", (e) => {
+  document.body.style.opacity = "1";
   //book animation
   const target = document.getElementById("front");
 
@@ -173,51 +175,8 @@ window.addEventListener("load", (e) => {
       threshold: 0,
     },
   );
-
-  //section highliter
-  const page = document.getElementById("bgpage");
-  const latestActivity = document.getElementById("latestActivities");
-  const bluroos = document.querySelectorAll(".bluro");
-  let animIn = latestActivity;
-  latestActivity.classList.add("bgnone");
-  page.style.height = latestActivity.offsetHeight + "px";
-  page.style.top =
-    latestActivity.getBoundingClientRect().top + window.scrollY + "px";
-
-  const focusAnim = document.querySelectorAll(".focusAnim");
-  const observo = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          if (window.animIn) {
-            window.animIn.classList.remove("bgnone");
-          }
-          entry.target.classList.add("bgnone");
-          window.animIn = entry.target;
-          const rect = entry.target.getBoundingClientRect();
-          page.style.height = entry.target.offsetHeight + "px";
-          page.style.top = rect.top + window.scrollY + "px";
-          const bluroo = entry.target.querySelector(".bluro");
-          bluroos.forEach((e) => {
-            if (e == bluroo) {
-              e.active = true;
-            } else {
-              e.active = false;
-            }
-          });
-        }
-      });
-    },
-    {
-      root: null,
-      rootMargin: "-45% 0px -45% 0px",
-      threshold: 0.1,
-    },
-  );
-  for (let i = 0; i < focusAnim.length; i++) {
-    observo.observe(focusAnim[i]);
-  }
   observer.observe(target);
+
   triggerSplash();
 });
 
@@ -245,16 +204,3 @@ function triggerSplash() {
     { once: true },
   );
 }
-
-document.querySelectorAll("img").forEach((e) => {
-  e.addEventListener("click", () => {
-    console.log("h");
-    const img = document.createElement("img");
-    const ifCon = document.getElementById("if-container");
-    const imgFocus = document.getElementById("imgfocus");
-    img.src = e.src;
-    ifCon.replaceChildren();
-    ifCon.appendChild(img);
-    imgFocus.style.display = "flex";
-  });
-});
