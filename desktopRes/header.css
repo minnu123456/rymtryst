@@ -179,8 +179,8 @@ a {
 }
 
 #splashscreen > img {
-  height: 35vw;
-  width: 35vw;
+  height: 20vw;
+  width: 20vw;
   margin: 0 auto;
   transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
 }

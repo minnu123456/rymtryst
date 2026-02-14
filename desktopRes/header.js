@@ -159,15 +159,19 @@ blurIns.forEach((e) => {
 });
 
 window.addEventListener("load", (e) => {
-  document.body.style.opacity = "1";
   //book animation
-  const target = document.getElementById("front");
+  const target = document.querySelectorAll(".front");
 
   const observer = new IntersectionObserver(
-    ([entry]) => {
-      if (entry.isIntersecting) {
-        target.style.animation = "book 2s ease-in-out both";
-      }
+    (entries) => {
+      // Removed brackets []
+      entries.forEach((entry) => {
+        // Loop through all changes
+        if (entry.isIntersecting) {
+          entry.target.style.animation = "book 2s ease-in-out both";
+          observer.unobserve(entry.target);
+        }
+      });
     },
     {
       root: null,
@@ -175,7 +179,8 @@ window.addEventListener("load", (e) => {
       threshold: 0,
     },
   );
-  observer.observe(target);
+
+  observer.observe(target[0]);
 
   triggerSplash();
 });
@@ -204,3 +209,31 @@ function triggerSplash() {
     { once: true },
   );
 }
+
+function resizeTextToFit(containerSelector, maxLines = 2) {
+  const container = document.querySelector(containerSelector);
+  if (!container) return;
+
+  let fontSize = parseFloat(window.getComputedStyle(container).fontSize);
+
+  // Helper to calculate current lines
+  const getLineCount = (el) => {
+    const style = window.getComputedStyle(el);
+    const lh = parseFloat(style.lineHeight) || parseFloat(style.fontSize) * 1.2;
+    return Math.round(el.scrollHeight / lh);
+  };
+
+  // Shrink if text is too wide OR if it exceeds max lines
+  while (
+    (container.scrollWidth > container.offsetWidth ||
+      getLineCount(container) > maxLines) &&
+    fontSize > 1
+  ) {
+    fontSize -= 0.5;
+    container.style.fontSize = fontSize + "px";
+    container.style.height = fontSize + "px";
+    container.style.lineHeight = fontSize + "px";
+  }
+}
+
+resizeTextToFit(".back h2", 2);
