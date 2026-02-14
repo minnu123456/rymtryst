@@ -376,12 +376,15 @@ footer {
 
 #main .back h3 {
   width: 80%;
+  height: auto;
+  font-size: 30px;
   margin: 0 auto;
   text-align: center;
   color: var(--p3);
-  font-weight: 700;
+  font-weight: 900;
   border-radius: 0;
   display: inline-block;
+  transform: scaleX(1);
 }
 
 .back img {
