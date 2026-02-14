@@ -235,5 +235,3 @@ function resizeTextToFit(containerSelector, maxLines = 2) {
     container.style.lineHeight = fontSize + "px";
   }
 }
-
-resizeTextToFit(".back h2", 2);
