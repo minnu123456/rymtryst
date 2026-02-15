@@ -91,6 +91,10 @@
   background: rgba(180, 200, 230, 0.6);
 }
 
+.card content {
+  opacity: 1;
+}
+
 /* Text area */
 .content {
   position: absolute;
