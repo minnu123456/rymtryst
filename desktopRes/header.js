@@ -109,8 +109,6 @@ async function moveNext(main = "track", childs = "#track img", offset) {
   }
 }
 
-moveNext();
-
 // animation logic for blur-in and out
 async function blurin(el) {
   if (!el) return true;
@@ -185,6 +183,7 @@ window.addEventListener("load", (e) => {
   observer.observe(target[0]);
 
   triggerSplash();
+  moveNext();
 });
 
 function triggerSplash() {
