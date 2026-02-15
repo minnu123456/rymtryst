@@ -432,7 +432,7 @@ footer {
 }
 
 .sec3Anim-track {
-  width: 90%;
+  width: 100%;
   height: auto;
   background-color: #0b1c3d;
   display: flex;
@@ -440,7 +440,7 @@ footer {
 }
 
 .sec3Anim-track > img {
-  width: 30%;
+  width: calc(100% / 3);
   height: auto;
   margin: 16px;
   visibility: hidden;
