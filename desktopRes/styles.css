@@ -39,9 +39,9 @@ html {
 
 section {
   position: relative;
-  width: 80vw;
+  width: 60vw;
   height: auto;
-  margin: 16px 10vw;
+  margin: 16px 20vw;
   padding: 32px;
   border-radius: 10px;
   display: flex;
@@ -88,7 +88,7 @@ section h2:not(#contact h2),
 }
 
 .sleft {
-  width: 100%;
+  width: 50%;
 }
 
 .sright {
@@ -425,23 +425,4 @@ footer {
 
 .bgnone {
   background-color: transparent;
-}
-
-#latestActivities {
-  flex-direction: column-reverse;
-}
-
-.sec3Anim-track {
-  width: 100%;
-  height: auto;
-  background-color: #0b1c3d;
-  display: flex;
-  flex-direction: row;
-}
-
-.sec3Anim-track > img {
-  width: calc(100% / 3);
-  height: auto;
-  margin: 16px;
-  visibility: hidden;
 }
