@@ -164,9 +164,7 @@ window.addEventListener("load", (e) => {
 
   const observer = new IntersectionObserver(
     (entries) => {
-      // Removed brackets []
       entries.forEach((entry) => {
-        // Loop through all changes
         if (entry.isIntersecting) {
           entry.target.style.animation = "book 2s ease-in-out both";
           observer.unobserve(entry.target);
