@@ -377,6 +377,7 @@ footer {
 #main .back h3 {
   width: 80%;
   height: auto;
+  line-height: 1;
   font-size: 30px;
   margin: 0 auto;
   text-align: center;
