@@ -39,9 +39,9 @@ html {
 
 section {
   position: relative;
-  width: 60vw;
+  width: 80vw;
   height: auto;
-  margin: 16px 20vw;
+  margin: 16px 10vw;
   padding: 32px;
   border-radius: 10px;
   display: flex;
