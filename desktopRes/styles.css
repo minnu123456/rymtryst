@@ -426,3 +426,7 @@ footer {
 .bgnone {
   background-color: transparent;
 }
+
+#latestActivities {
+  flex-direction: column-reverse;
+}
