@@ -61,7 +61,7 @@
 
 /* Color tints */
 .health .content {
-  background: rgba(255, 150, 120, 0.25);
+  background: rgba(255, 149, 120, 0.6);
 }
 .education .content {
   background: rgba(120, 170, 255, 0.25);
@@ -94,9 +94,10 @@
 /* Text area */
 .content {
   position: absolute;
-  bottom: 6px;
-  left: 6px;
-  right: 6px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 4px 6px;
   color: white;
   display: flex;
   flex-direction: row;
