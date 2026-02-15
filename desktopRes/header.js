@@ -156,6 +156,9 @@ async function blurin(el) {
   }
 }
 const blurIns = document.querySelectorAll(".bluro");
+blurIns.forEach((e) => {
+  blurin(e);
+});
 
 window.addEventListener("load", (e) => {
   //book animation
