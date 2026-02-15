@@ -430,3 +430,16 @@ footer {
 #latestActivities {
   flex-direction: column-reverse;
 }
+
+.sec3Anim-track {
+  width: 90%;
+  height: auto;
+  background-color: #0b1c3d;
+  display: flex;
+  flex-direction: row;
+}
+
+.sec3Anim-track > img {
+  margin: 16px;
+  visibility: hidden;
+}
