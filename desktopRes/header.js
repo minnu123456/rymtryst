@@ -68,13 +68,17 @@ slide.addEventListener("pointerup", () => {
 slide.addEventListener("pointerleave", () => {
   trackhold = false;
 });
-async function moveNext() {
+async function moveNext(main = "track", childs = "#track img", offset) {
   while (true) {
     let track = document.getElementById("track");
     let childs = document.querySelectorAll("#track img");
     if (childs.length === 0) return;
 
-    const width = childs[0].offsetWidth;
+    let width = childs[0].offsetWidth;
+
+    if (offset) {
+      width = offset;
+    }
 
     track.style.transition = "transform 0.8s ease-in-out";
     track.style.transform = `translateX(-${width}px)`;
