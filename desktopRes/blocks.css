@@ -61,7 +61,7 @@
 
 /* Color tints */
 .health .content {
-  background: rgba(255, 149, 120, 0.6);
+  background: rgba(255, 149, 120, 0.4);
 }
 .education .content {
   background: rgba(120, 170, 255, 0.6);
