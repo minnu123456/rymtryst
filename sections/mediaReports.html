@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Reports</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background: #f4f8fb;
+        color: #333;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 5vw;
+      }
+
+      .section-title {
+        text-align: center;
+        font-size: clamp(32px, 4vw, 44px);
+        color: #1a4f72;
+        margin-bottom: 40px;
+        font-weight: bold;
+      }
+
+      /* Intro */
+
+      .intro {
+        background: white;
+        padding: 35px;
+        border-radius: 14px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        text-align: center;
+        line-height: 1.8;
+        font-size: clamp(16px, 2vw, 18px);
+        margin-bottom: 60px;
+      }
+
+      /* Grid */
+
+      .media-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 40px;
+      }
+
+      /* Card */
+
+      .media-card {
+        background: white;
+        border-radius: 14px;
+        overflow: hidden;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+        transition: 0.3s;
+      }
+
+      .media-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+      }
+
+      /* Image */
+
+      .media-card img {
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+      }
+
+      /* Video */
+
+      .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+      }
+
+      .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+
+      /* Content */
+
+      .media-content {
+        padding: 25px;
+      }
+
+      .media-content h3 {
+        margin-top: 0;
+        color: #1a4f72;
+        font-size: 24px;
+      }
+
+      .media-content p {
+        line-height: 1.6;
+        font-size: 16px;
+      }
+
+      /* Mobile */
+
+      @media (max-width: 600px) {
+        .media-card img {
+          height: 220px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="section-title">Media Reports</div>
+
+      <div class="intro">
+        Our initiatives and humanitarian work have been recognized by various
+        media platforms. Through newspapers, digital media, and video coverage,
+        our trust continues to inspire communities and bring awareness to social
+        causes.
+      </div>
+
+      <div class="media-grid">
+        <!-- Newspaper Report -->
+
+        <div class="media-card">
+          <img
+            src="../res/sections/mediaReports/news.jpeg"
+            alt="Newspaper Charity Report"
+          />
+
+          <div class="media-content">
+            <h3>Newspaper Coverage</h3>
+
+            <p>
+              Our charitable activities and community initiatives have been
+              featured in local newspapers, highlighting our efforts in
+              education, healthcare, and social welfare programs. Media
+              recognition helps spread awareness and encourages community
+              participation in our mission.
+            </p>
+          </div>
+        </div>
+
+        <!-- YouTube Video -->
+
+        <div class="media-card">
+          <div class="video-container">
+<iframe id="vid" width="560" height="315" src="https://www.youtube.com/embed/bVy0jMPffYQ?si=YbqCvneqDEsTCgR5&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>   
+          </div>
+
+          <div class="media-content">
+            <h3>Charity Activities Video</h3>
+
+            <p>
+              Watch our initiatives in action through this video showcasing
+              community outreach programs, educational support initiatives, and
+              social service activities conducted by our trust.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

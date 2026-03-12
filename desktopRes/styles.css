@@ -9,7 +9,7 @@
   --p2: #ffd84d;
   --p3: #0b1c3d;
   --p4: #0b1c3db2;
-  --p5: #f4f8fbc2;
+  --p5: #5b3a29;
 }
 
 html {
@@ -41,7 +41,7 @@ section {
   position: relative;
   width: 60vw;
   height: auto;
-  margin: 16px 20vw;
+  margin: 36px 20vw;
   padding: 32px;
   border-radius: 10px;
   display: flex;
@@ -54,6 +54,17 @@ section:not(#contact),
 .section {
   background-image: url("../res/table.jpg");
   background-size: cover;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  section {
+    margin: 36px 0;
+    width: 100vw;
+  }
+
+  .bgnone {
+    outline: none;
+  }
 }
 
 section > * {
@@ -165,7 +176,7 @@ footer {
 #donateInBook {
   width: 35%;
   height: 100%;
-  border: 2px solid #5b3a29;
+  border: 2px solid var(--p5);
   padding: 16px;
   border-radius: 15px;
   display: flex;
@@ -173,7 +184,7 @@ footer {
 }
 
 #donateInBook #d-heading {
-  color: #5b3a29;
+  color: var(--p5);
   font-weight: 900;
 }
 
@@ -188,7 +199,7 @@ footer {
 
 #donateInBook button {
   width: 100%;
-  background-color: #5b3a29;
+  background-color: var(--p5);
   border: transparent;
   font-weight: 900;
   margin-top: 16px;
@@ -424,5 +435,5 @@ footer {
 }
 
 .bgnone {
-  background-color: transparent;
+  outline: 20px solid var(--p5);
 }

@@ -1,0 +1,67 @@
+{
+  "allpages": "./sections",
+  "alts": {
+    "vision": [
+      "vison",
+      "visun",
+      "vizion",
+      "vission",
+      "visin",
+      "vition",
+      "bisun",
+      "viosion"
+    ],
+    "mission": [
+      "mision",
+      "misson",
+      "missen",
+      "missian",
+      "mishun",
+      "mishion",
+      "mition",
+      "nission"
+    ],
+    "and": [
+      "adn",
+      "an",
+      "nd",
+      "ans",
+      "amd",
+      "ant",
+      "andd",
+      "snd",
+      "an&",
+      "a d",
+      "anf",
+      "and1"
+    ],
+    "aboutus": [
+      "aboutus",
+      "abutus",
+      "about us",
+      "about-us",
+      "about_us",
+      "abouut us",
+      "abouths",
+      "aboutis",
+      "aboutua",
+      "abootus",
+      "aboytus"
+    ]
+  },
+  "tabFirst": {
+    "vision and mission": "/vision&mission.html",
+    "aims and objective": "/aims&objective.html",
+    "digital and technological empowerment": "/Digital_&_Technological_Empowerment.html",
+    "educational initiatives": "/educationalInitiatives.html",
+    "governance": "/Governance.html",
+    "health services": "/healthServices.html",
+    "social welfare": "/socialWelfare.html",
+    "sustainable development": "/sustainableDevelopment.html",
+    "women empowerment and skill development": "/womenEmpowerment&skillDevelopment.html"
+  },
+  "ref": {
+    "aboutus": [0, 1],
+    "ourworks": [2, 3, 4, 5, 6, 7, 8]
+  }
+}

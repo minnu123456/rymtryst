@@ -91,7 +91,6 @@ async function moveNext(main = "track", childs = "#track img", offset) {
           if (trackhold == false) {
             state = false;
           } else {
-            console.log("h");
             await delay(50);
           }
         }
@@ -179,6 +178,41 @@ window.addEventListener("load", (e) => {
       threshold: 0,
     },
   );
+
+  const page = document.getElementById("bgpage");
+  const latestActivity = document.getElementById("latestActivities");
+  const bluroos = document.querySelectorAll(".bluro");
+  latestActivity.classList.add("bgnone");
+  const focusAnim = document.querySelectorAll(".focusAnim");
+  const observo = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          if (window.animIn) {
+            window.animIn.classList.remove("bgnone");
+          }
+          entry.target.classList.add("bgnone");
+          window.animIn = entry.target;
+          const bluroo = entry.target.querySelector(".bluro");
+          bluroos.forEach((e) => {
+            if (e == bluroo) {
+              e.active = true;
+            } else {
+              e.active = false;
+            }
+          });
+        }
+      });
+    },
+    {
+      root: null,
+      rootMargin: "-45% 0px -45% 0px",
+      threshold: 0.1,
+    },
+  );
+  for (let i = 0; i < focusAnim.length; i++) {
+    observo.observe(focusAnim[i]);
+  }
 
   observer.observe(target[0]);
 

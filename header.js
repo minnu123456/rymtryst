@@ -1,8 +1,11 @@
 const drop = document.getElementById("dropdown");
+const searchDrop = document.getElementById("search");
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-// header dropdown logic
+// header dropdown's logic
 const dropbut = document.getElementById("dropbutt");
+const searchButt = document.getElementById("searchButt");
+let headState = false;
 window.addEventListener("click", (e) => {
   if (e.target.closest("#dropbutt") === dropbut) {
     const dropValue = window.getComputedStyle(drop).display;
@@ -14,6 +17,21 @@ window.addEventListener("click", (e) => {
   } else if (!drop.contains(e.target)) {
     drop.style.display = "none";
   }
+
+  if (e.target.closest("#searchButt") === searchButt) {
+    const searchValue = window.getComputedStyle(searchDrop).display;
+    if (searchValue == "flex") {
+      searchDrop.style.display = "none";
+    } else if (searchValue == "none") {
+      searchDrop.style.display = "flex";
+    }
+  } else if (!searchDrop.contains(e.target)) {
+    searchDrop.style.display = "none";
+  }
+});
+
+document.getElementById("sb_clear").addEventListener("click", () => {
+  document.getElementById("sb_main").value = "";
 });
 
 // dropdown li elemnts focus logic
@@ -132,6 +150,7 @@ async function blurin(el) {
 
     for (let l = 0; l < delayy / interval; l++) {
       if (el.active == false) {
+        elem.style.animation = "none";
         elem.style.visibility = "visible";
         while (!el.active) {
           await delay(50);
@@ -177,6 +196,7 @@ window.addEventListener("load", (e) => {
   //section highliter
   const page = document.getElementById("bgpage");
   const latestActivity = document.getElementById("latestActivities");
+
   const bluroos = document.querySelectorAll(".bluro");
   let animIn = latestActivity;
   latestActivity.classList.add("bgnone");
@@ -248,7 +268,7 @@ function triggerSplash() {
 
 document.querySelectorAll("img").forEach((e) => {
   e.addEventListener("click", () => {
-    console.log("h");
+    disableScroll();
     const img = document.createElement("img");
     const ifCon = document.getElementById("if-container");
     const imgFocus = document.getElementById("imgfocus");
@@ -256,5 +276,52 @@ document.querySelectorAll("img").forEach((e) => {
     ifCon.replaceChildren();
     ifCon.appendChild(img);
     imgFocus.style.display = "flex";
+  });
+});
+
+const tag = document.createElement("script");
+tag.src = "https://www.youtube.com/iframe_api";
+document.head.appendChild(tag);
+
+let player;
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player("vid", {
+    events: {
+      onStateChange: () => {
+        document.querySelector("#latestActivities .bluro").active = false;
+      },
+    },
+  });
+}
+
+function disableScroll() {
+  document.body.style.overflow = "hidden";
+}
+
+function enableScroll() {
+  document.body.style.overflow = "auto";
+}
+
+function imgFocusExit() {
+  enableScroll();
+  document.getElementById("imgfocus").style.display = "none";
+}
+
+const tab = document.getElementById("tab");
+const searchDefault = tab.cloneNode(true);
+const input = document.getElementById("sb_main");
+let tabData;
+let elem;
+
+input.addEventListener("input", async () => {
+  tabData = await searchSetup(input.value);
+  tab.innerHTML = "";
+  console.log(tabData);
+  tabData.forEach((e) => {
+    elem = document.createElement("a");
+    elem.classList.add("tab_elements");
+    elem.innerText = e[0];
+    elem.href = e[1];
+    tab.appendChild(elem);
   });
 });

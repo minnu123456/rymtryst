@@ -5,7 +5,7 @@ header {
   background: transparent;
   color: var(--p3);
   anchor-name: --header;
-  z-index: 999;
+  z-index: 1;
   width: 100vw;
   overflow: hidden;
 }
@@ -101,12 +101,12 @@ ul .sub_dropdown_li {
 #h-left {
   height: auto;
   width: auto;
-  padding: 12px 0px;
+  padding: 8px 0px;
 }
 
 #h-down {
   height: auto;
-  padding: 5px;
+  padding: 1px;
   width: 100%;
   background-color: var(--p3);
   color: white;
@@ -117,11 +117,14 @@ ul .sub_dropdown_li {
 }
 
 #h-down > * {
-  border: 0px;
+  border: transparent;
   height: 20px;
   padding: 0 5px;
-  border-radius: 40px;
   text-align: center;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 1);
+  font-size: 15px;
+  font-weight: 500;
 }
 
 #h-down .searcho {
@@ -142,14 +145,16 @@ ul .sub_dropdown_li {
   display: block;
   height: auto;
   font-family: "Poppins", sans-serif;
-  font-weight: bold;
-  font-size: 4.2vw;
+  font-weight: 500;
+  font-size: 4.5vw;
+  line-height: 4.9vw;
   text-align: center;
   font-display: block;
   min-width: 0;
   flex-shrink: 0;
   width: auto;
   margin: 0 10px;
+  transform: scaleY(1.2);
 }
 
 #h-left h2 {
@@ -178,7 +183,6 @@ a {
 #splashscreen > img {
   height: 35vw;
   width: 35vw;
-  margin: 0 auto;
   transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
 }
 

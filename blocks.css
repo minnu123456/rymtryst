@@ -1,6 +1,6 @@
 .section {
   max-width: 1100px;
-  margin: 80px auto;
+  margin: 20px auto;
   padding: 0px 32px;
 }
 
@@ -61,51 +61,52 @@
 
 /* Color tints */
 .health .content {
-  background: rgba(255, 150, 120, 0.25);
+  background: rgba(255, 149, 120, 0.4);
 }
 .education .content {
-  background: rgba(120, 170, 255, 0.25);
+  background: rgba(120, 170, 255, 0.4);
 }
 .community .content {
-  background: rgba(180, 150, 255, 0.25);
+  background: rgba(180, 150, 255, 0.4);
 }
 .sustain .content {
-  background: rgba(140, 200, 150, 0.25);
+  background: rgba(140, 200, 150, 0.4);
 }
 .women .content {
-  background: rgba(255, 170, 200, 0.25);
+  background: rgba(255, 170, 200, 0.4);
 }
 .sports .content {
-  background: rgba(140, 220, 220, 0.25);
+  background: rgba(140, 220, 220, 0.4);
 }
 .relief .content {
-  background: rgba(255, 190, 120, 0.25);
+  background: rgba(255, 190, 120, 0.4);
 }
 .digital .content {
-  background: rgba(150, 220, 255, 0.25);
+  background: rgba(150, 220, 255, 0.4);
 }
 .institutions .content {
-  background: rgba(220, 220, 220, 0.25);
+  background: rgba(220, 220, 220, 0.4);
 }
 .governance .content {
-  background: rgba(180, 200, 230, 0.25);
+  background: rgba(180, 200, 230, 0.4);
 }
 
 /* Text area */
 .content {
   position: absolute;
-  bottom: 6px;
-  left: 6px;
-  right: 6px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 4px;
   color: white;
   display: flex;
   flex-direction: row;
 }
 
 .content svg {
-  height: 50px;
-  width: 50px;
-  margin-right: 8px;
+  height: 30px;
+  width: 30px;
+  margin-right: 5px;
 }
 
 .content h3 {

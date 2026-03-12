@@ -52,6 +52,7 @@ header > ul {
 .m {
   width: max-content;
   border-bottom: 1px solid var(--p3);
+  cursor: pointer;
 }
 
 header .arroww {
