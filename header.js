@@ -104,7 +104,6 @@ async function moveNext() {
           if (trackhold == false) {
             state = false;
           } else {
-            console.log("h");
             await delay(50);
           }
         }

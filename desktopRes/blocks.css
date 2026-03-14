@@ -1,7 +1,7 @@
 .section {
-  width: 100vw;
-  margin: 16px 0;
-  padding: 5vw 10vw;
+  width: 60vw;
+  margin: 16px auto;
+  padding: 2vw 5vw;
 }
 
 .title {
@@ -104,14 +104,14 @@
 }
 
 .content svg {
-  height: 50px;
-  width: 50px;
+  height: 30px;
+  width: 30px;
   margin-right: 8px;
 }
 
 .content h3 {
   margin: 0;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 700;
 }
 

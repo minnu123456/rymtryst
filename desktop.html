@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,104 +7,199 @@
 
     <meta name="description" content="A modern web page" />
     <meta name="author" content="Your Name" />
-    <link rel="preload" as="image" href="./res/logo.png">
+    <link rel="preload" as="image" href="./res/logo.png" />
     <script type="text/javascript">
-        (function() {
-            var mobileBreakpoint = 768; 
-            if (window.innerWidth < mobileBreakpoint) {
-                window.location.href = "https://rymeduandcharitabletrust.org.in/";
-            }
-        })();
+      (function () {
+        var mobileBreakpoint = 768;
+        if (window.innerWidth < mobileBreakpoint) {
+          window.location.href = "https://rymeduandcharitabletrust.org.in/";
+        }
+      })();
     </script>
     <link rel="stylesheet" href="./desktopRes/header.css" />
     <link rel="stylesheet" href="./desktopRes/styles.css" />
-    <link rel="stylesheet" href="./desktopRes/blocks.css">
-    <link rel="stylesheet" href="./desktopRes/simple.css">
+    <link rel="stylesheet" href="./desktopRes/blocks.css" />
+    <link rel="stylesheet" href="./desktopRes/simple.css" />
 
-
+    <script src="./search.js"></script>
     <link rel="icon" href="./res/favicon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <script>document.querySelectorAll('[loading="lazy"]').forEach(el => el.removeAttribute('loading'));
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      document
+        .querySelectorAll('[loading="lazy"]')
+        .forEach((el) => el.removeAttribute("loading"));
     </script>
   </head>
-  <body >
-    <div id="splashscreen" >
+  <body>
+    <div id="splashscreen">
       <img src="./res/logo.png" alt="logo image" />
     </div>
-    <img id="htmlbg" src="./desktopRes/media/books.jpg" alt="">
+    <img id="htmlbg" src="./desktopRes/media/books.jpg" alt="" />
     <header class="flex flex-row justify-around items-center">
-        <div id="h-left" class="flex flex-row justify-between items-center">
-        <img id="h-logo" src="./res/logo.png" alt="logo image" loading="eager"/>
-        
-          <h1>
-            Ratsa Yedukondalu Memorial 
-            Educational and Charitable Trust
-          </h1>
-        
-        </div>
+      <div id="h-left" class="flex flex-row justify-between items-center">
+        <img
+          id="h-logo"
+          src="./res/logo.png"
+          alt="logo image"
+          loading="eager"
+        />
+
+        <h1>Ratsa Yedukondalu Memorial Educational and Charitable Trust</h1>
+      </div>
 
       <ul id="dropdown">
-        
         <li>
-          <div class="m">About Us </div>
-          
+          <div class="m">About Us</div>
+
           <ul class="sub_dropdown_ul">
-            <li class="sub_dropdown_li" ><a href="./sections/vision&mission.html">Vision & Mission</a></li>
-            <li class="sub_dropdown_li"><a href="./sections/aims&objective.html">Aims & Objectives</a></li>
-          </ul>
-          
-        </li>
-        <li>
-          <div class="m">Our Works </div>
-          <ul class="sub_dropdown_ul">
-            <li class="sub_dropdown_li"><a href="./sections/healthServices.html">Medical & Health Services</a></li>
-            <li class="sub_dropdown_li"><a href="./sections/educationalInitiatives.html">Educational initiatives</a></li>
             <li class="sub_dropdown_li">
-              <a href="./sections/socialWelfare.html">Social welfare & Community development</a>
+              <a href="./sections/vision&mission.html">Vision & Mission</a>
             </li>
             <li class="sub_dropdown_li">
-              <a href="./sections/sustainableDevelopment.html">Sustainable development & Environmental initiatives</a>
-            </li>
-            <li class="sub_dropdown_li">
-              <a href="./sections/womenEmpowerment&skillDevelopment.html">Women Empowerment & Skill development</a>
-            </li>
-            <li class="sub_dropdown_li">Sports & Yoga</li>
-            <li class="sub_dropdown_li">idk disaster releif</li>
-            <li class="sub_dropdown_li"><a href="./sections/Digital_&_Technological_Empowerment.html">Digital & Technological Empowerment</a></li>
-            <li class="sub_dropdown_li">idk Institutions</li>
-            <li class="sub_dropdown_li">
-              <a href="./sections/Governance.html">Governance, Transparency & accountability</a>
+              <a href="./sections/aims&objective.html">Aims & Objectives</a>
             </li>
           </ul>
         </li>
         <li>
-          <div class="m">Insights </div>
+          <div class="m">Our Works</div>
           <ul class="sub_dropdown_ul">
-            <li class="sub_dropdown_li">News Letters</li>
-            <li class="sub_dropdown_li">Opinions</li>
-            <li class="sub_dropdown_li">Survey & Reports</li>
-            <li class="sub_dropdown_li">Videos</li>
+            <li class="sub_dropdown_li">
+              <a href="./sections/healthServices.html"
+                >Medical & Health Services</a
+              >
+            </li>
+            <li class="sub_dropdown_li">
+              <a href="./sections/educationalInitiatives.html"
+                >Educational initiatives</a
+              >
+            </li>
+            <li class="sub_dropdown_li">
+              <a href="./sections/socialWelfare.html"
+                >Social welfare & Community development</a
+              >
+            </li>
+            <li class="sub_dropdown_li">
+              <a href="./sections/sustainableDevelopment.html"
+                >Sustainable development & Environmental initiatives</a
+              >
+            </li>
+            <li class="sub_dropdown_li">
+              <a href="./sections/womenEmpowerment&skillDevelopment.html"
+                >Women Empowerment & Skill development</a
+              >
+            </li>
+            <li class="sub_dropdown_li">
+              <a href="./sections/underConstruction.html">Sports & Yoga</a>
+            </li>
+            <li class="sub_dropdown_li">
+              <a href="./sections/underConstruction.html">disaster releif</a>
+            </li>
+            <li class="sub_dropdown_li">
+              <a href="./sections/Digital_&_Technological_Empowerment.html"
+                >Digital & Technological Empowerment</a
+              >
+            </li>
+            <li class="sub_dropdown_li">
+              <a href="./sections/underConstruction.html">Institutions</a>
+            </li>
+            <li class="sub_dropdown_li">
+              <a href="./sections/Governance.html"
+                >Governance, Transparency & accountability</a
+              >
+            </li>
           </ul>
         </li>
-        <li><div class="m">Impack Stories </li></div>
         <li>
-          <div class="m">Media </div>
+          <div class="m">Insights</div>
           <ul class="sub_dropdown_ul">
-            <li class="sub_dropdown_li">Media Reports</li>
-            <li class="sub_dropdown_li">Press Releases</li>
-            <li class="sub_dropdown_li">Events</li>
+            <li class="sub_dropdown_li">
+              <a href="./sections/underConstruction.html">News Letters</a>
+            </li>
+            <li class="sub_dropdown_li">
+              <a href="./sections/underConstruction.html">Opinions</a>
+            </li>
+            <li class="sub_dropdown_li">
+              <a href="./sections/underConstruction.html">Survey & Reports</a>
+            </li>
+            <li class="sub_dropdown_li">
+              <a href="./sections/underConstruction.html">Videos</a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- <li><div class="m">Impack Stories</div></li> -->
+        <li>
+          <div class="m">Media</div>
+          <ul class="sub_dropdown_ul">
+            <li class="sub_dropdown_li">
+              <a href="./sections/mediaReports.html">Media Reports</a>
+            </li>
+            <li class="sub_dropdown_li">
+              <a href="./sections/underConstruction.html">Press Releases</a>
+            </li>
+            <li class="sub_dropdown_li">
+              <a href="./sections/underConstruction.html">Events</a>
+            </li>
           </ul>
         </li>
         <li>
-          <div class="m">Contact Us </div>
-          <ul class="sub_dropdown_ul">
-            <li class="sub_dropdown_li">Careers</li>
-            <li class="sub_dropdown_li">Contact Us</li>
-          </ul>
+          <div class="m"><a href="#contact">Contact Us</a></div>
         </li>
-      
+        <li>
+          <div class="m">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="15px"
+              viewBox="0 -960 960 960"
+              width="15px"
+              fill="#000000"
+            >
+              <path
+                d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"
+              />
+            </svg>
+            Search
+          </div>
+          <div
+            style="flex-direction: column; align-items: center"
+            id="search"
+            class="sub_dropdown_ul"
+          >
+            <div id="searchBar">
+              <pre>Search<br>Pages
+          </pre>
+              <textarea
+                name=""
+                id="sb_main"
+                placeholder="eg: Vision, Mission"
+              ></textarea>
+              <svg
+                id="sb_clear"
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                style="fill: #0b1c3d"
+              >
+                <path
+                  d="m336-280-56-56 144-144-144-143 56-56 144 144 143-144 56 56-144 143 144 144-56 56-143-144-144 144Z"
+                />
+              </svg>
+            </div>
+            <div id="tab">
+              <a class="tab_elements">Vision and Mission</a>
+              <a class="tab_elements">Aims and Objectives</a>
+              <a class="tab_elements">Medical and Health Services</a>
+              <a class="tab_elements">Educational Initiatives</a>
+            </div>
+          </div>
+        </li>
+        <li><div class="m">Donate Us</div></li>
       </ul>
       <div id="back"></div>
     </header>
@@ -118,91 +213,217 @@
 
     <section id="latestActivities" class="focusAnim">
       <div class="sleft">
-      <div class="bluro">
-        <img src="./res/m1.jpeg" alt="">
-        <img src="./res/m2.jpeg"" alt="">
-        <img src="./res/m3.jpeg"" alt="">
-        <img src="./res/m4.jpeg"" alt="">
-        <img src="./res/m5.jpeg"" alt="">
-        <img src="./res/m6.jpeg"" alt="">
-        <img src="./res/m7.jpeg"" alt="">
-        <img src="./res/sections/mediaReports/news.jpeg" alt="">
-        <iframe id="vid" width="560" height="315" src="https://www.youtube.com/embed/bVy0jMPffYQ?si=YbqCvneqDEsTCgR5&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-      <div class="flex flex-row justify-between exe" >
-        <div class="leftt arroww"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="white"><path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/></svg></div>
-        <a href="./sections/educationalInitiatives.html">Know More</a>
-        <div class="rightt arroww"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="white"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg></div>
-      </div>
+        <div class="bluro">
+          <img src="./res/m1.jpeg" alt="" />
+          <img src="./res/m2.jpeg" alt="" />
+          <img src="./res/m3.jpeg" alt="" />
+          <img src="./res/m4.jpeg" alt="" />
+          <img src="./res/m5.jpeg" alt="" />
+          <img src="./res/m6.jpeg" alt="" />
+          <img src="./res/m7.jpeg" alt="" />
+          <img src="./res/sections/mediaReports/news.jpeg" alt="" />
+          <iframe
+            id="vid"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/bVy0jMPffYQ?si=YbqCvneqDEsTCgR5&enablejsapi=1"
+            title="YouTube video player"
+            frameborder="0"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+            "
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="flex flex-row justify-between exe">
+          <div class="leftt arroww">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="34px"
+              viewBox="0 -960 960 960"
+              width="34px"
+              fill="white"
+            >
+              <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z" />
+            </svg>
+          </div>
+          <a href="./sections/educationalInitiatives.html">Know More</a>
+          <div class="rightt arroww">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="34px"
+              viewBox="0 -960 960 960"
+              width="34px"
+              fill="white"
+            >
+              <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
+            </svg>
+          </div>
+        </div>
       </div>
       <div class="sright">
         <h2>Latest Activities</h2>
-        <p>We are pleased to announce our 2026 impact goals, which focus on fostering sustainable community growth and implementing streamlined digital transparency to align with evolving global charitable reporting standards. This initiative aims to refine our internal processes and enhance our reporting framework, ensuring that our trust’s efforts are documented with the professional clarity and accountability required in the modern philanthropic landscape.</p>
+        <div class="sright-imgs">
+          <img
+            src="./desktopRes/media/section/hooks/verifiedImpact.png"
+            alt=""
+          />
+          <img src="./desktopRes/media/section/hooks/mission.png" alt="" />
+        </div>
+        <p>
+          We are pleased to announce our 2026 impact goals, which prioritize
+          sustainable community growth and streamlined digital transparency to
+          meet the latest global charitable reporting standards.
+        </p>
       </div>
     </section>
     <section id="examTraining" class="focusAnim flex-row-reverse">
       <div class="sleft">
-      <div class="bluro">
-        <img src="./res/m11.jpeg" alt="">
-        <img src="./res/m12.jpeg" alt="">
-        <img src="./res/m13.jpeg" alt="">
-        <img src="./res/m14.jpeg" alt="">
-        <img src="./res/m15.jpeg" alt="">
-        <img src="./res/m16.jpeg" alt="">
-      </div>
-      <div class="flex flex-row justify-between exe" >
-        <div class="leftt arroww"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="white"><path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/></svg></div>
-        <a href="./sections/educationalInitiatives.html">Know More</a>
-        <div class="rightt arroww"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="white"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg></div>
-      </div>
+        <div class="bluro">
+          <img src="./res/m11.jpeg" alt="" />
+          <img src="./res/m12.jpeg" alt="" />
+          <img src="./res/m13.jpeg" alt="" />
+          <img src="./res/m14.jpeg" alt="" />
+          <img src="./res/m15.jpeg" alt="" />
+          <img src="./res/m16.jpeg" alt="" />
+        </div>
+        <div class="flex flex-row justify-between exe">
+          <div class="leftt arroww">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="34px"
+              viewBox="0 -960 960 960"
+              width="34px"
+              fill="white"
+            >
+              <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z" />
+            </svg>
+          </div>
+          <a href="./sections/educationalInitiatives.html">Know More</a>
+          <div class="rightt arroww">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="34px"
+              viewBox="0 -960 960 960"
+              width="34px"
+              fill="white"
+            >
+              <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
+            </svg>
+          </div>
+        </div>
       </div>
       <div class="sright">
-      <h2>Competitive Exam training</h2>
-      <p>
-        Our 2026 training initiative focuses on a balanced blended learning approach combined with expert mentorship to help deserving candidates develop the academic rigor and discipline necessary for national-level competitive exams. This program is designed to guide students through a structured curriculum, providing the educational support and strategic insights required to navigate challenging assessments and pursue their academic goals effectively.
-      </p>
+        <h2>Exam training</h2>
+        <div class="sright-imgs">
+          <img src="./desktopRes/media/section/hooks/future.png" alt="" />
+          <img src="./desktopRes/media/section/hooks/pathways.png" alt="" />
+        </div>
+        <p>
+          Our 2026 training initiative leverages blended learning and expert
+          mentorship to equip deserving candidates with the digital tools and
+          academic rigor needed to excel in national-level competitive exams.
+        </p>
       </div>
     </section>
     <section id="vedicSchool" class="focusAnim">
       <div class="sleft">
-      <div class="bluro">
-        <img src="./res/m21.jpeg" alt="">
-        <img src="./res/m22.jpeg" alt="">
-        <img src="./res/24.jpeg" alt="">
-      </div>
-      <div class="flex flex-row justify-between exe" >
-        <div class="leftt arroww"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="white"><path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/></svg></div>
-        <a href="./sections/educationalInitiatives.html">Know More</a>
-        <div class="rightt arroww"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="white"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg></div>
-      </div>
+        <div class="bluro">
+          <img src="./res/m21.jpeg" alt="" />
+          <img src="./res/m22.jpeg" alt="" />
+          <img src="./res/24.jpeg" alt="" />
+        </div>
+        <div class="flex flex-row justify-between exe">
+          <div class="leftt arroww">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="34px"
+              viewBox="0 -960 960 960"
+              width="34px"
+              fill="white"
+            >
+              <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z" />
+            </svg>
+          </div>
+          <a href="./sections/educationalInitiatives.html">Know More</a>
+          <div class="rightt arroww">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="34px"
+              viewBox="0 -960 960 960"
+              width="34px"
+              fill="white"
+            >
+              <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
+            </svg>
+          </div>
+        </div>
       </div>
       <div class="sright">
-      <h2>Vedic School</h2>
-      <p>UNDER CONSTRUCTION</p>
+        <h2>Vedic School</h2>
+        <div class="sright-imgs">
+          <img src="./desktopRes/media/section/hooks/wisdom.png" alt="" />
+          <img src="./desktopRes/media/section/hooks/ethics.png" alt="" />
+        </div>
+        <p>UNDER CONSTRUCTION</p>
       </div>
     </section>
     <section id="meetings" class="focusAnim flex-row-reverse">
       <div class="sleft">
-      <div class="bluro">
-      <img src="./res/meetings/1.jpeg" loading="eager" alt="">
-      <img src="./res/meetings/2.jpeg" loading="eager" alt="">
-      <img src="./res/meetings/3.jpeg" loading="eager" alt="">
-      <img src="./res/meetings/4.jpeg" loading="eager" alt="">
-      <img src="./res/meetings/5.jpeg" loading="eager" alt="">
-      <img src="./res/meetings/6.jpeg" loading="eager" alt="">
-      <img src="./res/meetings/7.jpeg" loading="eager" alt="">
-      <img src="./res/meetings/8.jpeg" loading="eager" alt="">
-      <img src="./res/meetings/9.jpeg" loading="eager" alt="">
-      </div>
-      <div class="flex flex-row justify-between exe" >
-        <div class="leftt arroww"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="white"><path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/></svg></div>
-        <a href="./sections/educationalInitiatives.html">Know More</a>
-        <div class="rightt arroww"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="white"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg></div>
-      </div>
+        <div class="bluro">
+          <img src="./res/meetings/1.jpeg" loading="eager" alt="" />
+          <img src="./res/meetings/2.jpeg" loading="eager" alt="" />
+          <img src="./res/meetings/3.jpeg" loading="eager" alt="" />
+          <img src="./res/meetings/4.jpeg" loading="eager" alt="" />
+          <img src="./res/meetings/5.jpeg" loading="eager" alt="" />
+          <img src="./res/meetings/6.jpeg" loading="eager" alt="" />
+          <img src="./res/meetings/7.jpeg" loading="eager" alt="" />
+          <img src="./res/meetings/8.jpeg" loading="eager" alt="" />
+          <img src="./res/meetings/9.jpeg" loading="eager" alt="" />
+        </div>
+        <div class="flex flex-row justify-between exe">
+          <div class="leftt arroww">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="34px"
+              viewBox="0 -960 960 960"
+              width="34px"
+              fill="white"
+            >
+              <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z" />
+            </svg>
+          </div>
+          <a href="./sections/educationalInitiatives.html">Know More</a>
+          <div class="rightt arroww">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="34px"
+              viewBox="0 -960 960 960"
+              width="34px"
+              fill="white"
+            >
+              <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
+            </svg>
+          </div>
+        </div>
       </div>
       <div class="sright">
         <h2>Meetings</h2>
-        <p>Building a brighter tomorrow begins with our commitment to educational excellence, as we convene this strategic meeting to empower underprivileged youth through comprehensive scholarships, digital literacy, and vocational mentorship while expanding our smart classroom initiatives to ensure that socio-economic status never dictates a student's potential for success.</p>
+        <div class="sright-imgs">
+          <img src="./desktopRes/media/section/hooks/community.png" alt="" />
+          <img src="./desktopRes/media/section/hooks/ethics.png" alt="" />
+        </div>
+        <p>
+          Our strategic meeting focuses on empowering underprivileged youth
+          through scholarships, digital tools, and mentorship. we ensure
+          educational excellence regardless of socio-economic status.
+        </p>
       </div>
     </section>
     <div class="section">
@@ -210,7 +431,10 @@
       <div class="grid">
         <a href="./sections/healthServices.html" class="card health">
           <img
-            src="./desktopRes/media/blocks/1.jpeg" loading="eager" decoding="sync" fetchpriority="high"
+            src="./desktopRes/media/blocks/1.jpeg"
+            loading="eager"
+            decoding="sync"
+            fetchpriority="high"
           />
           <div class="overlay"></div>
           <div class="content flex">
@@ -235,7 +459,10 @@
 
         <a href="./sections/educationalInitiatives.html" class="card education">
           <img
-            src="./desktopRes/media/blocks/2.jpeg" loading="eager" decoding="sync" fetchpriority="high"
+            src="./desktopRes/media/blocks/2.jpeg"
+            loading="eager"
+            decoding="sync"
+            fetchpriority="high"
           />
           <div class="overlay"></div>
           <div class="content">
@@ -260,7 +487,10 @@
 
         <a href="./sections/socialWelfare.html" class="card community">
           <img
-            src="./desktopRes/media/blocks/3.jpeg" loading="eager" decoding="sync" fetchpriority="high"
+            src="./desktopRes/media/blocks/3.jpeg"
+            loading="eager"
+            decoding="sync"
+            fetchpriority="high"
           />
           <div class="overlay"></div>
           <div class="content">
@@ -285,7 +515,10 @@
 
         <a href="./sections/sustainableDevelopment.html" class="card sustain">
           <img
-            src="./desktopRes/media/blocks/4.jpeg" loading="eager" decoding="sync" fetchpriority="high"
+            src="./desktopRes/media/blocks/4.jpeg"
+            loading="eager"
+            decoding="sync"
+            fetchpriority="high"
           />
           <div class="overlay"></div>
           <div class="content">
@@ -308,9 +541,15 @@
           <div class="arrow">›</div>
         </a>
 
-        <a href="./sections/womenEmpowerment&skillDevelopment.html" class="card women">
+        <a
+          href="./sections/womenEmpowerment&skillDevelopment.html"
+          class="card women"
+        >
           <img
-            src="./desktopRes/media/blocks/5.jpeg" loading="eager" decoding="sync" fetchpriority="high"
+            src="./desktopRes/media/blocks/5.jpeg"
+            loading="eager"
+            decoding="sync"
+            fetchpriority="high"
           />
           <div class="overlay"></div>
           <div class="content">
@@ -335,7 +574,10 @@
 
         <a href="" class="card sports">
           <img
-            src="./desktopRes/media/blocks/6.jpeg" loading="eager" decoding="sync" fetchpriority="high"
+            src="./desktopRes/media/blocks/6.jpeg"
+            loading="eager"
+            decoding="sync"
+            fetchpriority="high"
           />
           <div class="overlay"></div>
           <div class="content">
@@ -360,7 +602,10 @@
 
         <a href="" class="card relief">
           <img
-            src="./desktopRes/media/blocks/7.jpeg" loading="eager" decoding="sync" fetchpriority="high"
+            src="./desktopRes/media/blocks/7.jpeg"
+            loading="eager"
+            decoding="sync"
+            fetchpriority="high"
           />
           <div class="overlay"></div>
           <div class="content">
@@ -383,9 +628,15 @@
           <div class="arrow">›</div>
         </a>
 
-        <a href="./sections/Digital_&_Technological_Empowerment.html" class="card digital">
+        <a
+          href="./sections/Digital_&_Technological_Empowerment.html"
+          class="card digital"
+        >
           <img
-            src="./desktopRes/media/blocks/8.jpeg" loading="eager" decoding="sync" fetchpriority="high"
+            src="./desktopRes/media/blocks/8.jpeg"
+            loading="eager"
+            decoding="sync"
+            fetchpriority="high"
           />
           <div class="overlay"></div>
           <div class="content">
@@ -410,7 +661,10 @@
 
         <a href="/institutions" class="card institutions">
           <img
-            src="./desktopRes/media/blocks/9.jpeg" loading="eager" decoding="sync" fetchpriority="high"
+            src="./desktopRes/media/blocks/9.jpeg"
+            loading="eager"
+            decoding="sync"
+            fetchpriority="high"
           />
           <div class="overlay"></div>
           <div class="content">
@@ -435,7 +689,10 @@
 
         <a href="./sections/Governance.html" class="card governance">
           <img
-            src="./desktopRes/media/blocks/10.jpeg" loading="eager" decoding="sync" fetchpriority="high"
+            src="./desktopRes/media/blocks/10.jpeg"
+            loading="eager"
+            decoding="sync"
+            fetchpriority="high"
           />
           <div class="overlay"></div>
           <div class="content">
@@ -461,51 +718,108 @@
     </div>
     <section id="book" class="focusAnim">
       <div id="main">
-        <div  class="page front">
-          
-          <img src="./res/bg1.png" id="a-front"  loading="eager" alt="" class="front" />
+        <div class="page front">
+          <img
+            src="./res/bg1.png"
+            id="a-front"
+            loading="eager"
+            alt=""
+            class="front"
+          />
           <div id="b-front" class="front back page">
-          <h3>Founder's Message</h3>
-          <img id="founder" src="./res/founder.jpeg" loading="eager" alt="">
-          <img id="bgo" src="./res/paper.jpg" loading="eager" alt="" />
+            <h3>Founder's Message</h3>
+            <img id="founder" src="./res/founder.png" loading="eager" alt="" />
+            <img id="bgo" src="./res/paper.jpg" loading="eager" alt="" />
           </div>
         </div>
         <div class="back page">
           <div>
-          <p>This Trust is founded on the enduring values of compassion, equity, and service to humanity. Our mission is to support the underprivileged, empower talented individuals, and create equal opportunities for growth through education, healthcare, and social development.</p>
+            <p>
+              This Trust is founded on the enduring values of compassion,
+              equity, and service to humanity. Our mission is to support the
+              underprivileged, empower talented individuals, and create equal
+              opportunities for growth through education, healthcare, and social
+              development.
+            </p>
           </div>
           <img id="bgo" src="./res/paper.jpg" loading="eager" alt="" />
         </div>
       </div>
       <div id="donateInBook">
         <h2 id="d-heading">HELP US</h2>
-        <img src="./res/donate.png" alt="">
-        <p>Education is the key to freedom; your support turns the lock.
-        Donate now to provide books, supplies, and a safe space for students in need to thrive.</p>
+        <img src="./res/donate.png" alt="" />
+        <p>
+          Education is the key to freedom; your support turns the lock. Donate
+          now to provide books, supplies, and a safe space for students in need
+          to thrive.
+        </p>
         <button>Donate Here</button>
       </div>
     </section>
     <section id="contact">
       <div>
-      <h2>Contact us</h2>
-      <span>D.NO: 8-72/1,Ratsavari Peta, Kesavapuram, Tallarevu, Kakinada District, Andhra Pradesh PIN: 533463</span>
-      <div class="dline">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
-        <pre>  +91 8332923309</pre>
+        <h2>Contact us</h2>
+        <span
+          >D.NO: 8-72/1,Ratsavari Peta, Kesavapuram, Tallarevu, Kakinada
+          District, Andhra Pradesh PIN: 533463</span
+        >
+        <div class="dline">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="white"
+          >
+            <path
+              d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"
+            />
+          </svg>
+          <pre>  +91 8332923309</pre>
+        </div>
+        <div class="dline">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="white"
+          >
+            <path
+              d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"
+            />
+          </svg>
+          <pre>  +91 9441490513</pre>
+        </div>
+        <div class="dline">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="white"
+          >
+            <path
+              d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"
+            />
+          </svg>
+          <pre>  admin@rymeduandcharitabletrust.org.in</pre>
+        </div>
       </div>
-      <div class="dline">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
-        <pre>  +91 9441490513</pre>
-      </div>
-      <div class="dline">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
-        <pre>  admin@rymeduandcharitabletrust.org.in</pre>
-      </div>
-      </div>
-      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4336.0610813945705!2d82.22753599317629!3d16.927431392245477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a382792bc9a2aeb%3A0xb0bb347d67af982b!2sTurangi%20Panchayati%20Office!5e0!3m2!1sen!2sin!4v1767790633489!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="eager" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe
+        class="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4336.0610813945705!2d82.22753599317629!3d16.927431392245477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a382792bc9a2aeb%3A0xb0bb347d67af982b!2sTurangi%20Panchayati%20Office!5e0!3m2!1sen!2sin!4v1767790633489!5m2!1sen!2sin"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="eager"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </section>
     <footer class="flex justify-center">
-    © Ratsa Yedukondala Memorial Educatonal and Charitable Trust. Designed and Developed By Vihar
+      © Ratsa Yedukondala Memorial Educatonal and Charitable Trust. Designed and
+      Developed By Vihar
     </footer>
     <script src="./desktopRes/header.js"></script>
   </body>
