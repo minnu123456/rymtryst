@@ -39,15 +39,22 @@ html {
 
 section {
   position: relative;
-  width: 60vw;
-  height: 20vw;
-  margin: 36px 20vw;
-  padding: 32px;
-  border-radius: 10px;
+  width: 1152px;
+  height: 384px;
+  font-size: 38.4px;
+  margin: 3vw auto;
+  padding: 2vw 3vw;
+  border-radius: 1vw;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.section {
+  height: auto;
+  width: 1152px;
+  font-size: 38.4px;
 }
 
 section:not(#contact),
@@ -58,12 +65,12 @@ section:not(#contact),
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   section {
-    margin: 36px 0;
+    margin: 0;
     width: 100vw;
   }
 
   .bgnone {
-    outline: none;
+    outline: none !important;
   }
 }
 
@@ -80,6 +87,7 @@ section > * {
 
 section p {
   font-family: "Open Sans", sans-serif;
+  font-size: 50%;
   color: black;
   text-align: center;
 }
@@ -92,7 +100,7 @@ section h2:not(#contact h2),
 .section h2 {
   border-bottom: 2px solid var(--p3);
   font-family: "Montserrat", sans-serif;
-  font-size: 40px;
+  font-size: 100%;
   font-weight: 600;
   color: var(--p3);
   padding: 0px 8px;
@@ -103,7 +111,9 @@ section h2:not(#contact h2),
 }
 
 .sleft {
+  height: 100%;
   width: 50%;
+  overflow: hidden;
 }
 
 .sright {
@@ -132,13 +142,13 @@ footer {
   color: rgba(255, 255, 255, 0.747);
   text-align: center;
   padding: 4px;
-  font-size: 15px;
+  font-size: 1vw;
   font-weight: 100;
 }
 
 .bluro {
   position: relative;
-  height: 15vw;
+  height: 90%;
   width: 100%;
   overflow: hidden;
 }
@@ -152,11 +162,16 @@ footer {
 
 .arroww {
   background-color: var(--p3);
-  height: 30px;
-  width: 30px;
+  height: 100%;
+  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.arroww svg {
+  height: 100%;
+  width: 100%;
 }
 
 .rightt {
@@ -168,6 +183,7 @@ footer {
 }
 
 .exe {
+  height: 10%;
   width: 100%;
 }
 
@@ -176,7 +192,8 @@ footer {
   color: var(--p3);
   border-radius: 5px;
   padding: 0px 8px;
-  height: 30px;
+  height: 100%;
+  font-size: 50%;
   font-weight: 600;
   background-color: transparent;
   display: flex;
@@ -184,7 +201,7 @@ footer {
 }
 
 #donateInBook {
-  width: 35%;
+  width: 30%;
   height: 100%;
   border: 2px solid var(--p5);
   padding: 16px;
@@ -193,8 +210,13 @@ footer {
   flex-direction: column;
 }
 
+#donateInBook p {
+  font-size: 40%;
+}
+
 #donateInBook #d-heading {
   color: var(--p5);
+  font-size: 100%;
   font-weight: 900;
 }
 
@@ -210,11 +232,12 @@ footer {
 #donateInBook button {
   width: 100%;
   background-color: var(--p5);
+  height: auto;
   border: transparent;
   font-weight: 900;
   margin-top: 16px;
   color: white;
-  font-size: 25px;
+  font-size: 75%;
   text-align: center;
 }
 
@@ -227,10 +250,11 @@ footer {
 .dline {
   display: flex;
   flex-direction: row;
+  margin-right: auto;
 }
 
-.dline {
-  margin-right: auto;
+.dline pre {
+  font-size: 50%;
 }
 
 .map {
@@ -255,7 +279,7 @@ footer {
 #contact h2 {
   color: white;
   height: auto;
-  font-size: 44px;
+  font-size: 100%;
   font-weight: 900;
   width: auto;
   margin-right: auto;
@@ -263,8 +287,10 @@ footer {
 }
 
 #contact span {
+  display: block;
   height: auto;
-  font-size: 18px;
+  font-size: 45%;
+  line-height: 1.4;
 }
 
 @keyframes dropDown {
@@ -313,10 +339,9 @@ footer {
 
 #main {
   position: relative;
-  width: 15vw;
-  height: 20vw;
-  margin-left: 15vw;
-  margin-right: auto;
+  width: 25%;
+  height: 100%;
+  margin-left: 25%;
   perspective: 2000px;
   border-radius: 20px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.685);
@@ -331,7 +356,9 @@ footer {
   background-size: cover;
   display: flex;
   flex-direction: row;
-  padding: 32px 5vw;
+  padding: 32px auto;
+  height: 450px;
+  justify-content: space-around;
 }
 
 .page {
@@ -399,7 +426,7 @@ footer {
   width: 80%;
   height: auto;
   line-height: 1;
-  font-size: 30px;
+  font-size: 80%;
   margin: 0 auto;
   text-align: center;
   color: var(--p3);
@@ -420,8 +447,8 @@ footer {
 }
 
 .back p {
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 40%;
+  line-height: 1.2;
   text-align: center;
   height: auto;
 }
@@ -445,10 +472,9 @@ footer {
 }
 
 .bgnone {
-  outline: 20px solid var(--p5);
+  outline: 1vw solid var(--p5);
 }
 
-#book,
 #contact {
   height: auto;
 }
@@ -463,6 +489,8 @@ footer {
 }
 
 .sright-imgs > img {
+  width: 40%;
+  height: 100%;
   margin: 0 15px;
 }
 
@@ -541,4 +569,5 @@ textarea:focus {
   border-bottom: 1px solid var(--p3);
   margin-bottom: 5px;
   padding: 0 10px;
+  font-size: 50%;
 }

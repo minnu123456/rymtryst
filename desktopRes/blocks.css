@@ -1,21 +1,12 @@
 .section {
-  width: 60vw;
   margin: 16px auto;
   padding: 2vw 5vw;
-}
-
-.title {
-  text-align: center;
-  font-size: 36px;
-  font-weight: 900;
-  color: #0b1c3d;
-  margin-bottom: 50px;
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 26px;
+  gap: 1.5vw;
   padding-top: 16px;
 }
 
@@ -111,12 +102,12 @@
 
 .content h3 {
   margin: 0;
-  font-size: 20px;
+  font-size: 43%;
   font-weight: 700;
 }
 
 .content p {
-  font-size: 10px;
+  font-size: 30%;
   opacity: 0.85;
 }
 
