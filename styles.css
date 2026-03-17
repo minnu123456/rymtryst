@@ -100,6 +100,7 @@ footer {
   width: 100%;
   position: absolute;
   visibility: hidden;
+  will-change: transform;
 }
 
 #vid {

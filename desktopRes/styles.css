@@ -39,9 +39,9 @@ html {
 
 section {
   position: relative;
-  width: 1152px;
-  height: 384px;
-  font-size: 38.4px;
+  width: 60vw;
+  height: 20vw;
+  font-size: 2vw;
   margin: 3vw auto;
   padding: 2vw 3vw;
   border-radius: 1vw;
@@ -193,6 +193,7 @@ footer {
 .exe {
   height: 10%;
   width: 100%;
+  cursor: pointer;
 }
 
 .exe a {
@@ -247,6 +248,7 @@ footer {
   color: white;
   font-size: 75%;
   text-align: center;
+  cursor: pointer;
 }
 
 #main #back h2 {
@@ -365,7 +367,7 @@ footer {
   display: flex;
   flex-direction: row;
   padding: 32px auto;
-  height: 450px;
+  height: 23vw;
   justify-content: space-around;
 }
 
