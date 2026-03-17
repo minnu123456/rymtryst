@@ -29,6 +29,7 @@
   box-shadow: 0 18px 30px rgba(0, 0, 0, 0.12);
   transition: all 0.4s ease;
   text-decoration: none;
+  will-change: transform, opacity;
 }
 
 .card:hover {
@@ -144,29 +145,36 @@
 .card:nth-child(odd) {
   animation: comeRight forwards linear;
   animation-timeline: view();
-  animation-range: entry -5% cover 15%;
+  animation-range: entry -5% cover 25%;
 }
 
 .card:nth-child(even) {
   animation: comeLeft forwards linear;
   animation-timeline: view();
-  animation-range: entry -5% cover 15%;
+  animation-range: entry -5% cover 25%;
 }
 
 @keyframes comeRight {
   0% {
-    right: 10vw;
+    /* Move it 10vw to the right from its natural spot */
+    transform: translateX(-10vw);
+    opacity: 0; /* Optional: adds a nice fade-in */
   }
   100% {
-    right: 0vw;
+    /* Back to its normal 0 position */
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
 @keyframes comeLeft {
   0% {
-    left: 10vw;
+    /* Move it 10vw to the left from its natural spot */
+    transform: translateX(10vw);
+    opacity: 0;
   }
   100% {
-    left: 0vw;
+    transform: translateX(0);
+    opacity: 1;
   }
 }

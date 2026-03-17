@@ -93,6 +93,8 @@ section p {
 }
 
 .bluro > iframe {
+  width: 100%;
+  height: 100%;
   visibility: hidden;
 }
 
@@ -153,11 +155,17 @@ footer {
   overflow: hidden;
 }
 
-.bluro > img {
+.bluro > * {
   height: 100%;
   width: 100%;
   position: absolute;
   visibility: hidden;
+}
+
+#vid {
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
 }
 
 .arroww {
@@ -570,4 +578,38 @@ textarea:focus {
   margin-bottom: 5px;
   padding: 0 10px;
   font-size: 50%;
+}
+
+#imgfocus {
+  height: 100vh;
+  width: 100vw;
+  background-color: #0b1c3d8c;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  display: none;
+}
+
+#imgfocus > svg {
+  position: absolute;
+  height: 4vw;
+  width: 4vw;
+  top: 5%;
+  right: 5%;
+}
+
+#if-container {
+  width: 100vw;
+  min-height: 10vh;
+  height: auto;
+  display: flex;
+}
+
+#if-container > img {
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
 }

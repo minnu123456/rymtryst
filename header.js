@@ -278,21 +278,6 @@ document.querySelectorAll("img").forEach((e) => {
   });
 });
 
-const tag = document.createElement("script");
-tag.src = "https://www.youtube.com/iframe_api";
-document.head.appendChild(tag);
-
-let player;
-function onYouTubeIframeAPIReady() {
-  player = new YT.Player("vid", {
-    events: {
-      onStateChange: () => {
-        document.querySelector("#latestActivities .bluro").active = false;
-      },
-    },
-  });
-}
-
 function disableScroll() {
   document.body.style.overflow = "hidden";
 }

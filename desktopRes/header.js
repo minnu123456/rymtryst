@@ -279,6 +279,32 @@ function resizeTextToFit(containerSelector, maxLines = 2) {
   }
 }
 
+document.querySelectorAll("img").forEach((e) => {
+  e.addEventListener("click", () => {
+    disableScroll();
+    const img = document.createElement("img");
+    const ifCon = document.getElementById("if-container");
+    const imgFocus = document.getElementById("imgfocus");
+    img.src = e.src;
+    ifCon.replaceChildren();
+    ifCon.appendChild(img);
+    imgFocus.style.display = "flex";
+  });
+});
+
+function disableScroll() {
+  document.body.style.overflow = "hidden";
+}
+
+function enableScroll() {
+  document.body.style.overflow = "auto";
+}
+
+function imgFocusExit() {
+  enableScroll();
+  document.getElementById("imgfocus").style.display = "none";
+}
+
 const tab = document.getElementById("tab");
 const searchDefault = tab.cloneNode(true);
 const input = document.getElementById("sb_main");
