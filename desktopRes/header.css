@@ -60,6 +60,12 @@ header > ul {
   width: max-content;
   border-bottom: 1px solid var(--p3);
   cursor: pointer;
+  user-select: none;
+}
+
+.m svg {
+  height: 1.8vh;
+  width: auto;
 }
 
 header .arroww {

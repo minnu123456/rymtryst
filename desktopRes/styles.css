@@ -5,6 +5,10 @@
   font-family: Arial, sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 :root {
   --p2: #ffd84d;
   --p3: #0b1c3d;
@@ -53,7 +57,7 @@ section {
 
 .section {
   height: auto;
-  width: 1152px;
+  width: 60vw;
   font-size: 38.4px;
 }
 
@@ -207,6 +211,7 @@ footer {
   background-color: transparent;
   display: flex;
   align-items: center;
+  user-select: none;
 }
 
 #donateInBook {
