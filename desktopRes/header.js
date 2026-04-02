@@ -46,11 +46,6 @@ drop.addEventListener("click", (e) => {
 
 // slide element position management (cause: header positioning is absolute)
 
-window.onload = () => {
-  const header = document.querySelector("header").offsetHeight;
-  document.getElementById("slide").style.margin = 0;
-  document.getElementById("slide").style.marginTop = "10vh";
-};
 document.addEventListener("resize", () => {
   var mobileBreakpoint = 768;
   if (window.innerWidth < mobileBreakpoint) {
