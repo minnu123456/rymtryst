@@ -74,16 +74,42 @@ document.addEventListener("resize", () => {
 // the animation logic for slide element
 const slide = document.getElementById("slide");
 let trackhold = false;
+
+let norm = 0;
 slide.addEventListener("pointerdown", (e) => {
+  let x = e.clientX;
+  let y = e.clientY;
   if (e.button === 0) {
     trackhold = true;
+    if (norm == 0) {
+      norm = x;
+      console.log(norm);
+    }
   }
 });
-slide.addEventListener("pointerup", () => {
+slide.addEventListener("pointerup", (e) => {
   trackhold = false;
+  if (norm != e.clientX) {
+    if (norm > e.clientX && norm - e.clientX > 100) {
+      goLeft = true;
+    } else if (norm < e.clientX && e.clientX - norm > 100) {
+      goRight = true;
+    }
+  }
+  norm = 0;
+  console.log(goLeft, goRight);
 });
-slide.addEventListener("pointerleave", () => {
+slide.addEventListener("pointerleave", (e) => {
   trackhold = false;
+  if (norm != e.clientX) {
+    if (norm > e.clientX && norm - e.clientX > 100) {
+      goLeft = true;
+    } else if (norm < e.clientX && e.clientX - norm > 100) {
+      goRight = true;
+    }
+  }
+  norm = 0;
+  console.log(goLeft, goRight);
 });
 async function moveNext() {
   while (true) {
@@ -114,6 +140,14 @@ async function moveNext() {
 
         track.style.transition = "none";
         track.style.transform = `translateX(0)`;
+      } else if (goLeft == true || goRight == true) {
+        track.style.transition = "none";
+        track.style.transition = "transform 0.8s ease-in-out";
+        if (goLeft == true) {
+          track.style.transform = `translateX(+${width}px)`;
+        } else {
+          track.style.transform = `translateX(-${width}px)`;
+        }
       } else {
         await delay(100);
       }
@@ -300,7 +334,6 @@ let elem;
 input.addEventListener("input", async () => {
   tabData = await searchSetup(input.value);
   tab.innerHTML = "";
-  console.log(tabData);
   tabData.forEach((e) => {
     elem = document.createElement("a");
     elem.classList.add("tab_elements");

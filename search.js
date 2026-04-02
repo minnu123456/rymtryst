@@ -51,8 +51,6 @@ function tabComplete(input) {
         ...tab,
         ...groupedIndexJson(searchData.ref[refs[j]], searchData.tabFirst),
       ];
-
-      console.log(tab);
       j = refs.length;
     }
   }
@@ -132,6 +130,5 @@ function groupedIndexJson(array, object) {
     result.push([objectKeys[array[i]], object[objectKeys[array[i]]]]);
     changeTab.tabFirst(i, null);
   }
-  console.log(result);
   return result;
 }

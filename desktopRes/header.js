@@ -309,7 +309,6 @@ let elem;
 input.addEventListener("input", async () => {
   tabData = await searchSetup(input.value);
   tab.innerHTML = "";
-  console.log(tabData);
   tabData.forEach((e) => {
     elem = document.createElement("a");
     elem.classList.add("tab_elements");
