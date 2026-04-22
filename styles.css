@@ -22,6 +22,7 @@ html {
   margin: 0;
   height: auto;
   width: 100vw;
+  touch-action: none;
 }
 
 #slide * {
@@ -271,7 +272,7 @@ footer {
 }
 
 #back h2 {
-  font-size: 24px;
+  font-size: 21px;
   text-align: center;
   color: var(--p3);
   font-weight: 700;
@@ -458,4 +459,103 @@ textarea:focus {
   border-bottom: 1px solid var(--p3);
   margin-bottom: 5px;
   padding: 0 10px;
+}
+
+.slider-container {
+  width: 80%; /* Adjust width as needed for your site */
+  max-width: 900px; /* Limits the max width */
+  margin: 0 auto;
+  position: relative; /* Essential for absolute-positioning children (arrows, captions) */
+  overflow: hidden; /* Important: Hides the other slides */
+  background-color: #fff; /* White background behind the images, if any */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow for a card effect */
+}
+
+/* 3. The Slide Wrapper (Moving Part) */
+.slides {
+  display: flex; /* Lines up images horizontally */
+  transition: transform 0.5s ease-in-out; /* Creates the sliding animation */
+}
+
+/* 4. Individual Slides */
+.slide {
+  min-width: 100%; /* Each slide takes up 100% of the slider-container width */
+  box-sizing: border-box;
+  display: flex; /* Centers images within the slide */
+  justify-content: center;
+  align-items: center;
+}
+
+.slide img {
+  aspect-ratio: 1/1.4;
+  width: 60%; /* Ensures image fits within the container width */
+  height: auto; /* Maintains aspect ratio */
+  display: block;
+}
+
+/* 5. Styling the Navigation Arrows */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /* Centers the arrow vertically */
+  width: auto;
+  padding: 16px;
+  color: var(--p4); /* Arrow color */
+  font-weight: bold;
+  font-size: 30px; /* Size of the arrow */
+  transition: 0.6s ease;
+  user-select: none; /* Prevents text selection on click */
+  z-index: 10; /* Ensures arrows are on top of images */
+}
+
+/* Adjust positions for Left and Right arrows */
+.next {
+  right: 10px;
+}
+.prev {
+  left: 10px;
+}
+
+/* Optional: Change background on hover for better user feedback */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Optional: Styling for Dot Indicators */
+.dots-container {
+  text-align: center;
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  z-index: 10;
+}
+
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: white;
+}
+
+#trustee {
+  background-color: var(--p5);
+  padding: 10px 0;
+}
+
+section#trustee h2 {
+  width: 80vw !important;
+  margin: 0 auto;
+  text-align: left;
 }

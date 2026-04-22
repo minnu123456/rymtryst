@@ -317,3 +317,55 @@ input.addEventListener("input", async () => {
     tab.appendChild(elem);
   });
 });
+
+const slideContainer = document.getElementById("slide-container");
+const slides = document.getElementById("slides");
+const totalSlides = slideContainer.querySelectorAll("img").length;
+const width = slides.querySelector(".focused").offsetLeft;
+const sldie_p = document.querySelector("#trustee p");
+const names = [
+  "T.Siva RamaKrishna (M.sc chem, B.ed)",
+  "T.L.N. Sai Sri  (B.sc.Com)",
+  "M.Maha Srinu (trustee)",
+  "R.Venkatesh Varma (B.sc comp)",
+  "P.Sri Hari (trustee)",
+  
+];
+let currentSlide = 1;
+sldie_p.innerText = names[0];
+console.log(totalSlides);
+function slide_next() {
+  if (currentSlide < totalSlides) {
+    currentSlide++;
+  } else {
+    currentSlide = 1;
+  }
+  slideContainer
+    .querySelectorAll("img")
+    .forEach((img) => img.classList.remove("focused"));
+  slides
+    .querySelector("img:nth-of-type(" + currentSlide + ")")
+    .classList.add("focused");
+  let h = currentSlide!=1 ? currentSlide-1:0;
+
+  slides.style.transform = `translateX(${-1 * ((slides.querySelector(".focused").offsetWidth * h) - 20)}px)`;
+  sldie_p.innerText = names[currentSlide - 1];
+}
+function slide_prev() {
+  if (currentSlide > 1) {
+    currentSlide--;
+  } else {
+    currentSlide = totalSlides;
+  }
+  slideContainer
+    .querySelectorAll("img")
+    .forEach((img) => img.classList.remove("focused"));
+
+  slideContainer
+    .querySelector("img:nth-of-type(" + currentSlide + ")")
+    .classList.add("focused");
+  let h = currentSlide==1 ? 0:currentSlide-1;
+
+  slides.style.transform = `translateX(${-1 * ((slides.querySelector(".focused").offsetWidth * h) - 20)}px)`;
+  sldie_p.innerText = names[currentSlide - 1];
+}

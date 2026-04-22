@@ -62,6 +62,7 @@ drop.addEventListener("click", (e) => {
 // slide element position management (cause: header positioning is absolute)
 
 window.onload = () => {
+  moveNext();
   const header = document.querySelector("header").offsetHeight;
   document.getElementById("slide").style.margin = 0;
   document.getElementById("slide").style.marginTop = header + "px";
@@ -74,53 +75,45 @@ document.addEventListener("resize", () => {
 // the animation logic for slide element
 const slide = document.getElementById("slide");
 let trackhold = false;
-
+let goLeft = false,
+  goRight = false;
 let norm = 0;
 slide.addEventListener("pointerdown", (e) => {
   let x = e.clientX;
-  let y = e.clientY;
+  console.log(1);
   if (e.button === 0) {
     trackhold = true;
     if (norm == 0) {
       norm = x;
-      console.log(norm);
     }
   }
 });
 slide.addEventListener("pointerup", (e) => {
   trackhold = false;
-  if (norm != e.clientX) {
-    if (norm > e.clientX && norm - e.clientX > 100) {
-      goLeft = true;
-    } else if (norm < e.clientX && e.clientX - norm > 100) {
+  pos = e.clientX;
+  if (norm != pos) {
+    if (norm > pos && norm - pos > 100) {
       goRight = true;
+    } else if (norm < pos && pos - norm > 100) {
+      goLeft = true;
     }
   }
-  norm = 0;
   console.log(goLeft, goRight);
+  norm = 0;
 });
 slide.addEventListener("pointerleave", (e) => {
   trackhold = false;
-  if (norm != e.clientX) {
-    if (norm > e.clientX && norm - e.clientX > 100) {
-      goLeft = true;
-    } else if (norm < e.clientX && e.clientX - norm > 100) {
-      goRight = true;
-    }
-  }
-  norm = 0;
-  console.log(goLeft, goRight);
 });
 async function moveNext() {
+  let track = document.getElementById("track");
+  let childs = document.querySelectorAll("#track img");
+  const width = childs[0].offsetWidth;
+
   while (true) {
-    let track = document.getElementById("track");
-    let childs = document.querySelectorAll("#track img");
     if (childs.length === 0) return;
 
-    const width = childs[0].offsetWidth;
-
     track.style.transition = "transform 0.8s ease-in-out";
-    track.style.transform = `translateX(-${width}px)`;
+    track.style.transform = `translateX(-${width * 2}px)`;
 
     for (let i = 0; i < 28; i++) {
       if (trackhold == true) {
@@ -135,18 +128,16 @@ async function moveNext() {
         }
         track.getAnimations().forEach((e) => e.play());
       } else if (i == 7) {
-        const firstChild = track.firstElementChild;
-        track.appendChild(firstChild);
-
         track.style.transition = "none";
-        track.style.transform = `translateX(0)`;
-      } else if (goLeft == true || goRight == true) {
-        track.style.transition = "none";
-        track.style.transition = "transform 0.8s ease-in-out";
+        track.style.transform = `translateX(-${width}px)`;
+        track.appendChild(track.firstElementChild);
+      } else if ((goLeft == true || goRight == true) && i > 7) {
         if (goLeft == true) {
-          track.style.transform = `translateX(+${width}px)`;
+          track.prepend(track.lastElementChild);
+          goLeft = false;
         } else {
-          track.style.transform = `translateX(-${width}px)`;
+          track.appendChild(track.firstElementChild);
+          goRight = false;
         }
       } else {
         await delay(100);
@@ -155,7 +146,7 @@ async function moveNext() {
   }
 }
 
-moveNext();
+
 
 // animation logic for blur-in and out
 async function blurin(el) {
@@ -299,7 +290,7 @@ function triggerSplash() {
   );
 }
 
-document.querySelectorAll("img").forEach((e) => {
+document.querySelectorAll("img:not(.no-img-focus)").forEach((e) => {
   e.addEventListener("click", () => {
     disableScroll();
     const img = document.createElement("img");
@@ -342,3 +333,64 @@ input.addEventListener("input", async () => {
     tab.appendChild(elem);
   });
 });
+
+const trustee_names = document.getElementById("trustee-names");
+
+const names = [
+  "T.Siva RamaKrishna (M.sc chem, B.ed)",
+  "T.L.N. Sai Sri  (B.sc.Com)",
+  "M.Maha Srinu (trustee)",
+  "R.Venkatesh Varma (B.sc comp)",
+  "P.Sri Hari (trustee)",
+];
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+
+
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("slide");
+  let dots = document.getElementsByClassName("dot");
+  let slideWrapper = document.querySelector(".slides");
+
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+
+  trustee_names.innerText = names[slideIndex-1];
+
+  slideWrapper.style.transform = `translateX(-${(slideIndex - 1) * 100}%)`;
+
+
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  if (dots.length > 0) {
+    dots[slideIndex - 1].className += " active";
+  }
+}
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "ArrowLeft") {
+    plusSlides(-1);
+  } else if (event.key === "ArrowRight") {
+    plusSlides(1);
+  }
+});
+
+

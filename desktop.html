@@ -30,6 +30,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@100..800&display=swap" rel="stylesheet">
     <script>
       document
         .querySelectorAll('[loading="lazy"]')
@@ -64,8 +65,11 @@
           alt="logo image"
           loading="eager"
         />
-
-        <h1>Ratsa Yedukondalu Memorial Educational and Charitable Trust</h1>
+        <div id="h1Cont">
+          <h1>Ratsa Yedukondalu Memorial Educational and Charitable Trust</h1>
+          <h1 id="tel">రాట్సా యెడుకొండలు మెమోరియల్ ఎడ్యుకేషనల్ అండ్ ఛారిటబుల్ ట్రస్ట్</h1>
+        </div>
+        
       </div>
 
       <ul id="dropdown">
@@ -289,7 +293,7 @@
         </p>
       </div>
     </section>
-    <section id="examTraining" class="focusAnim flex-row-reverse">
+    <section id="centralLibrary" class="focusAnim flex-row-reverse">
       <div class="sleft">
         <div class="bluro">
           <img src="./res/examTraining/m11.jpeg" alt="" />
@@ -326,7 +330,7 @@
         </div>
       </div>
       <div class="sright">
-        <h2>Exam training</h2>
+        <h2>Central Library</h2>
         <div class="sright-imgs">
           <img src="./desktopRes/media/section/hooks/future.png" alt="" />
           <img src="./desktopRes/media/section/hooks/pathways.png" alt="" />
@@ -760,6 +764,27 @@
         </p>
         <button>Donate Here</button>
       </div>
+    </section>
+    <section id="trustee">
+      <h2>Trustees</h2>
+      <div id="slide-container">
+        <a class="prev" onclick="slide_prev()">&#10094;</a>
+        <a class="next" onclick="slide_next()">&#10095;</a>
+        <div id="slides-track">
+          <div id="slides">
+            <img
+              class="focused"
+              src="./res/trustees/1.jpeg"
+              alt="Image 1"
+            />
+            <img src="./res/trustees/2.jpeg" alt="Image 2" />
+            <img src="https://placehold.co/100x120" alt="Image 5" />
+            <img src="./res/trustees/4.jpeg" alt="Image 4" />
+            <img src="https://placehold.co/100x120" alt="Image 5" />
+          </div>
+        </div>
+      </div>
+      <p></p>
     </section>
     <section id="contact">
       <div>
