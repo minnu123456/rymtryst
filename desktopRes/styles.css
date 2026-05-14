@@ -401,6 +401,12 @@ footer {
   justify-content: center;
 }
 
+#b-front p {
+  color: var(--p3);
+  font-weight: 300;
+  font-family: normal;
+}
+
 #bgo {
   position: absolute;
   top: 0;
@@ -452,8 +458,9 @@ footer {
 }
 
 .back p {
+  font-family: "Playfair Display", serif;
   font-size: 50%;
-  font-weight: 700;
+  font-weight: 550;
   line-height: 1.1;
   text-align: center;
   height: auto;

@@ -256,7 +256,7 @@ footer {
 }
 
 #back {
-  padding: 44px 16px;
+  padding: 34px 16px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -288,10 +288,18 @@ footer {
 }
 
 #back p {
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 14px;
+  line-height: 1.2;
   text-align: center;
   height: auto;
+  font-family: "Playfair Display", serif;
+}
+
+#back h3 {
+  font-size: 12px;
+  width: auto;
+  text-align: center;
+  line-height: 0.6;
 }
 
 img {
