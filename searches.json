@@ -47,7 +47,81 @@
       "aboutua",
       "abootus",
       "aboytus"
-    ]
+    ],
+    "aims": ["aim", "ames", "ayms", "aimz", "aimse"],
+    "objective": [
+      "objectiv",
+      "objektive",
+      "objective",
+      "obyective",
+      "objecitve",
+      "obective"
+    ],
+    "digital": [
+      "digtal",
+      "digitl",
+      "degital",
+      "didgital",
+      "digitall",
+      "digitle"
+    ],
+    "technological": [
+      "technolgical",
+      "tecnological",
+      "technologicel",
+      "teknowlogical",
+      "technoogical"
+    ],
+    "empowerment": [
+      "empowrment",
+      "empowermant",
+      "emppowerment",
+      "impowerment",
+      "empowermen"
+    ],
+    "educational": [
+      "educationel",
+      "educatinal",
+      "educashional",
+      "educatinal",
+      "edukational"
+    ],
+    "initiatives": [
+      "inititives",
+      "initatives",
+      "initiativs",
+      "initiativse",
+      "initetives"
+    ],
+    "governance": [
+      "goverance",
+      "govermance",
+      "governanse",
+      "governancee",
+      "govrnance"
+    ],
+    "health": ["helth", "healt", "healthh", "helt", "halth"],
+    "services": ["servises", "servis", "servicez", "servics", "serivces"],
+    "social": ["socal", "sosial", "sociall", "socail", "shocial"],
+    "welfare": ["wellfare", "welfar", "welfere", "walfer", "welfair"],
+    "sustainable": [
+      "sustanable",
+      "sustainabl",
+      "sustainabel",
+      "sustainible",
+      "sustenabl"
+    ],
+    "development": [
+      "devlopment",
+      "develpment",
+      "developement",
+      "devolopment",
+      "developmant"
+    ],
+    "women": ["womon", "wimen", "whomen", "womans", "womin"],
+    "skill": ["skil", "skils", "skyll", "skilz"],
+    "media": ["medya", "medea", "medai", "meddia"],
+    "reports": ["reprots", "repports", "reportz", "reporst", "reportes"]
   },
   "tabFirst": {
     "vision and mission": "/vision&mission.html",
@@ -58,7 +132,8 @@
     "health services": "/healthServices.html",
     "social welfare": "/socialWelfare.html",
     "sustainable development": "/sustainableDevelopment.html",
-    "women empowerment and skill development": "/womenEmpowerment&skillDevelopment.html"
+    "women empowerment and skill development": "/womenEmpowerment&skillDevelopment.html",
+    "media reports": "/mediaReports.html"
   },
   "ref": {
     "aboutus": [0, 1],

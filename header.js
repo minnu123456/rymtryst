@@ -146,8 +146,6 @@ async function moveNext() {
   }
 }
 
-
-
 // animation logic for blur-in and out
 async function blurin(el) {
   if (!el) return true;
@@ -329,7 +327,7 @@ input.addEventListener("input", async () => {
     elem = document.createElement("a");
     elem.classList.add("tab_elements");
     elem.innerText = e[0];
-    elem.href = e[1];
+    elem.href = "/sections" + e[1];
     tab.appendChild(elem);
   });
 });
@@ -357,8 +355,6 @@ function currentSlide(n) {
   showSlides((slideIndex = n));
 }
 
-
-
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("slide");
@@ -372,10 +368,9 @@ function showSlides(n) {
     slideIndex = slides.length;
   }
 
-  trustee_names.innerText = names[slideIndex-1];
+  trustee_names.innerText = names[slideIndex - 1];
 
   slideWrapper.style.transform = `translateX(-${(slideIndex - 1) * 100}%)`;
-
 
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
@@ -392,5 +387,3 @@ document.addEventListener("keydown", function (event) {
     plusSlides(1);
   }
 });
-
-

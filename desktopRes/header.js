@@ -19,7 +19,7 @@ window.addEventListener("click", (e) => {
 // dropdown li elemnts focus logic
 drop.addEventListener("click", (e) => {
   const clickedElem = e.target;
-  const childs = drop.children;
+  const childs = drop.querySelectorAll(":scope > :not(#donate)");
   const target = clickedElem.parentElement;
   if (Array.from(childs).includes(target)) {
     if (target.classList.contains("ul-highlight")) {
@@ -313,59 +313,73 @@ input.addEventListener("input", async () => {
     elem = document.createElement("a");
     elem.classList.add("tab_elements");
     elem.innerText = e[0];
-    elem.href = e[1];
+    elem.href = "/sections" + e[1];
     tab.appendChild(elem);
   });
 });
 
-const slideContainer = document.getElementById("slide-container");
-const slides = document.getElementById("slides");
-const totalSlides = slideContainer.querySelectorAll("img").length;
-const width = slides.querySelector(".focused").offsetLeft;
-const sldie_p = document.querySelector("#trustee p");
+const trustee_names = document.getElementById("trustee-names");
+const trustee_status = document.getElementById("trustee-status");
+
 const names = [
-  "T.Siva RamaKrishna (M.sc chem, B.ed)",
-  "T.L.N. Sai Sri  (B.sc.Com)",
-  "M.Maha Srinu (trustee)",
-  "R.Venkatesh Varma (B.sc comp)",
-  "P.Sri Hari (trustee)",
-  
+  "T.Siva RamaKrishna ",
+  "T.L.N. Sai Sri ",
+  "M.Maha Srinu ",
+  "R.Venkatesh Varma ",
+  "P.Sri Hari ",
 ];
-let currentSlide = 1;
-sldie_p.innerText = names[0];
-console.log(totalSlides);
-function slide_next() {
-  if (currentSlide < totalSlides) {
-    currentSlide++;
-  } else {
-    currentSlide = 1;
-  }
-  slideContainer
-    .querySelectorAll("img")
-    .forEach((img) => img.classList.remove("focused"));
-  slides
-    .querySelector("img:nth-of-type(" + currentSlide + ")")
-    .classList.add("focused");
-  let h = currentSlide!=1 ? currentSlide-1:0;
 
-  slides.style.transform = `translateX(${-1 * ((slides.querySelector(".focused").offsetWidth * h) - 20)}px)`;
-  sldie_p.innerText = names[currentSlide - 1];
+const status = [
+  "M.Sc., (chem), B.Ed.,",
+  "B.Sc., (comp.sci)",
+  "(trustee)",
+  "B.Sc., (comp.sci)",
+  "(trsutee)",
+];
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides((slideIndex += n));
 }
-function slide_prev() {
-  if (currentSlide > 1) {
-    currentSlide--;
-  } else {
-    currentSlide = totalSlides;
-  }
-  slideContainer
-    .querySelectorAll("img")
-    .forEach((img) => img.classList.remove("focused"));
 
-  slideContainer
-    .querySelector("img:nth-of-type(" + currentSlide + ")")
-    .classList.add("focused");
-  let h = currentSlide==1 ? 0:currentSlide-1;
-
-  slides.style.transform = `translateX(${-1 * ((slides.querySelector(".focused").offsetWidth * h) - 20)}px)`;
-  sldie_p.innerText = names[currentSlide - 1];
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides((slideIndex = n));
 }
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("slide");
+  let dots = document.getElementsByClassName("dot");
+  let slideWrapper = document.querySelector(".slides");
+
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+
+  trustee_names.innerText = names[slideIndex - 1];
+  trustee_status.innerText = status[slideIndex - 1];
+
+  slideWrapper.style.transform = `translateX(-${(slideIndex - 1) * 100}%)`;
+
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  if (dots.length > 0) {
+    dots[slideIndex - 1].className += " active";
+  }
+}
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "ArrowLeft") {
+    plusSlides(-1);
+  } else if (event.key === "ArrowRight") {
+    plusSlides(1);
+  }
+});
