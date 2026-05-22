@@ -333,15 +333,26 @@ input.addEventListener("input", async () => {
 });
 
 const trustee_names = document.getElementById("trustee-names");
+const trustee_status = document.getElementById("trustee-status");
 
 const names = [
-  "T.Siva RamaKrishna M.Sc., (chem), B.Ed.,",
-  "M.Bala Maha Raju B. Tech., M. Tech., mechanical",
-  "P. Veera Babu B. Tech(CSE)., M. Tech.(IT).",
-  "R.Venkatesh Varma B.Sc., (comp.sci)",
-  "T.L.N. Sai Sri  B.Sc., (comp.sci)",
-  "P.Sri Hari SSC",
-  "M.Maha Srinu SSC",
+  "T.Siva RamaKrishna ",
+  "M.Bala Maha Raju ",
+  "P.Veera Babu ",
+  "R.Venkatesh Varma ",
+  "T.L.N. Sai Sri ",
+  "P.Sri Hari ",
+  "M.Maha Srinu ",
+];
+
+const status = [
+  "M.Sc., (chem), B.Ed.,",
+  "B. Tech., M. Tech., mechanical",
+  "B. Tech(CSE)., M. Tech.(IT).)",
+  "B.Sc., (comp.sci)",
+  "B.Sc., (comp.sci)",
+  "SSC",
+  "SSC",
 ];
 
 let slideIndex = 1;
@@ -370,7 +381,8 @@ function showSlides(n) {
     slideIndex = slides.length;
   }
 
-  trustee_names.innerText = names[slideIndex - 1];
+  trustee_names.innerHTML = names[slideIndex - 1];
+  trustee_status.innerHTML = status[slideIndex - 1];
 
   slideWrapper.style.transform = `translateX(-${(slideIndex - 1) * 100}%)`;
 
