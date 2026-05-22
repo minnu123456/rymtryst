@@ -281,6 +281,7 @@ footer {
 #founder {
   height: 100px;
   width: 100px;
+  margin: 0 auto;
 }
 
 #back p {
@@ -583,9 +584,6 @@ section#trustee h2 {
   font-size: 18px;
 }
 
-#founder-section {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+#founder-info #qualifications {
+  font-size: 14px;
 }

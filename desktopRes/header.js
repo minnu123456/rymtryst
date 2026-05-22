@@ -333,7 +333,7 @@ const names = [
 
 const status = [
   "M.Sc., (chem), B.Ed.,",
-  "B. Tech., M. Tech., mechanical",
+  "B. Tech., M. Tech., (mechanical)",
   "B. Tech(CSE)., M. Tech.(IT).)",
   "B.Sc., (comp.sci)",
   "B.Sc., (comp.sci)",
