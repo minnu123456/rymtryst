@@ -335,11 +335,13 @@ input.addEventListener("input", async () => {
 const trustee_names = document.getElementById("trustee-names");
 
 const names = [
-  "T.Siva RamaKrishna (M.sc chem, B.ed)",
-  "T.L.N. Sai Sri  (B.sc.Com)",
-  "M.Maha Srinu (trustee)",
-  "R.Venkatesh Varma (B.sc comp)",
-  "P.Sri Hari (trustee)",
+  "T.Siva RamaKrishna (M.Sc., (chem), B.Ed.,)",
+  "M.Bala Maha Raju (B. Tech., M. Tech., mechanical)",
+  "P. Veera Babu (B. Tech(CSE)., M. Tech.(IT).)",
+  "R.Venkatesh Varma (B.Sc., (comp.sci))",
+  "T.L.N. Sai Sri  (B.Sc., (comp.sci))",
+  "P.Sri Hari (SSC)",
+  "M.Maha Srinu (SSC)",
 ];
 
 let slideIndex = 1;

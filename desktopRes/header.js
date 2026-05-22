@@ -323,18 +323,22 @@ const trustee_status = document.getElementById("trustee-status");
 
 const names = [
   "T.Siva RamaKrishna ",
-  "T.L.N. Sai Sri ",
-  "M.Maha Srinu ",
+  "M.Bala Maha Raju ",
+  "P.Veera Babu ",
   "R.Venkatesh Varma ",
+  "T.L.N. Sai Sri ",
   "P.Sri Hari ",
+  "M.Maha Srinu ",
 ];
 
 const status = [
   "M.Sc., (chem), B.Ed.,",
+  "B. Tech., M. Tech., mechanical",
+  "B. Tech(CSE)., M. Tech.(IT).)",
   "B.Sc., (comp.sci)",
-  "(trustee)",
   "B.Sc., (comp.sci)",
-  "(trsutee)",
+  "SSC",
+  "SSC",
 ];
 
 let slideIndex = 1;
