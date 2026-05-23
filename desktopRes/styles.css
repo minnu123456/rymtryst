@@ -352,7 +352,7 @@ footer {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.685);
 }
 
-#main * {
+.border-20 {
   border-radius: 20px;
 }
 
@@ -734,6 +734,21 @@ section#trustee h2 {
   font-size: 35%;
 }
 
+#founder-info {
+  position: relative;
+  display: block;
+  width: max-content;
+  margin: 0 auto;
+}
+
+#founder-info * {
+  margin: 0;
+  font-size: 50%;
+}
+
 #qualifications {
-  font-size: 40%;
+  font-size: 35%;
+  line-height: 0.8;
+  height: auto;
+  text-align: right;
 }

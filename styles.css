@@ -569,6 +569,11 @@ section#trustee h2 {
   text-align: left;
 }
 
+#founder-info {
+  width: max-content;
+  margin: 0 auto;
+}
+
 #founder-info h3 {
   font-size: 16px;
   text-align: center;
@@ -585,5 +590,7 @@ section#trustee h2 {
 }
 
 #founder-info #qualifications {
-  font-size: 14px;
+  font-size: 12px;
+  text-align: right;
+  line-height: 0.8;
 }
