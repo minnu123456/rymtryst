@@ -274,7 +274,7 @@ function resizeTextToFit(containerSelector, maxLines = 2) {
   }
 }
 
-document.querySelectorAll("img").forEach((e) => {
+document.querySelectorAll("img:not(.no-img-focus)").forEach((e) => {
   e.addEventListener("click", () => {
     disableScroll();
     const img = document.createElement("img");
