@@ -399,6 +399,8 @@ footer {
   transform-origin: center;
   transform: rotateY(180deg);
   justify-content: center;
+  align-items: center;
+  padding: 0;
 }
 
 #b-front p {
